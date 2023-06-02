@@ -49,6 +49,13 @@ $$\Leftrightarrow \Sigma^{-1} = \begin{pmatrix} \cos(\theta) & -\sin(\theta) \\ 
 $$\Leftrightarrow \Sigma^{-1} = \begin{pmatrix} \cos(\theta) & -\sin(\theta) \\ \sin(\theta) & \cos(\theta) \end{pmatrix} \cdot \begin{pmatrix} \frac{1}{a} & 0 \\ 0 & \frac{1}{b} \end{pmatrix} \cdot \begin{pmatrix} \cos(\theta) & \sin(\theta) \\ -\sin(\theta) & \cos(\theta) \end{pmatrix}$$
 $$\Leftrightarrow \Sigma^{-1} = \begin{pmatrix} \frac{b\cos^{2} \theta + a\sin^{2} \theta}{ab} & \frac{b\sin \theta\cos \theta - a\sin \theta\cos \theta}{ab} \\ \frac{b\sin \theta\cos \theta - a\sin \theta\cos \theta}{ab} & \frac{b\sin^{2} \theta + a\sin^{2} \theta}{ab}\end{pmatrix} $$
 
+On injecte dans la formule de $f_Z(z)$ :
+$$f_Z(z) = \frac{1}{2\pi \sqrt{ab}}exp(-\frac{1}{2}\begin{pmatrix}x-\mu_1 & y-\mu_2 \end{pmatrix}\cdot\begin{pmatrix} \frac{b\cos^{2} \theta + a\sin^{2} \theta}{ab} & \frac{b\sin \theta\cos \theta - a\sin \theta\cos \theta}{ab} \\ \frac{b\sin \theta\cos \theta - a\sin \theta\cos \theta}{ab} & \frac{b\sin^{2} \theta + a\sin^{2} \theta}{ab}\end{pmatrix}\begin{pmatrix}x-\mu_1 \\ y-\mu_2 \end{pmatrix})$$
+$$ \Leftrightarrow f_Z(z) = \frac{1}{2\pi \sqrt{ab}}exp(-\frac{1}{2}\begin{pmatrix}x-\mu_1 & y-\mu_2 \end{pmatrix}\cdot\begin{pmatrix} \frac{b\cos^{2} \theta + a\sin^{2} \theta}{ab} & \frac{b\sin \theta\cos \theta - a\sin \theta\cos \theta}{ab} \\ \frac{b\sin \theta\cos \theta - a\sin \theta\cos \theta}{ab} & \frac{b\sin^{2} \theta + a\sin^{2} \theta}{ab}\end{pmatrix}\cdot\begin{pmatrix}x-\mu_1 \\ y-\mu_2 \end{pmatrix})$$
+\begin{multline*} \Leftrightarrow f_Z(z) = \frac{1}{2\pi \sqrt{ab}}exp(-\frac{1}{2}\begin{pmatrix}x-\mu_1 & y-\mu_2 \end{pmatrix}\frac{1}{ab}\cdot\begin{pmatrix} b\cos^{2} \theta + a\sin^{2} \theta & b\sin \theta\cos \theta - a\sin \theta\cos \theta \\ b\sin \theta\cos \theta - a\sin \theta\cos \theta & b\sin^{2} \theta + a\sin^{2} \theta\end{pmatrix}\\\cdot\begin{pmatrix}x-\mu_1 \\ y-\mu_2 \end{pmatrix})\end{multline*}
+\begin{multline*}\Leftrightarrow f_Z(z) = \frac{1}{2\pi \sqrt{ab}}exp(-\frac{1}{2ab}\begin{pmatrix}x-\mu_1 & y-\mu_2 \end{pmatrix}\cdot\begin{pmatrix} b\cos^{2} \theta + a\sin^{2} \theta & b\sin \theta\cos \theta - a\sin \theta\cos \theta \\ b\sin \theta\cos \theta - a\sin \theta\cos \theta & b\sin^{2} \theta + a\sin^{2} \theta\end{pmatrix}\\\cdot \begin{pmatrix}x-\mu_1 \\ y-\mu_2 \end{pmatrix})\end{multline*}
+
+Calculons l'intérieur de l'exponentielle :
 
 \[
     \Leftrightarrow \frac{{[(x - \mu_1) \cdot \cos(\theta) + (y - \mu_2) \cdot \sin(\theta)}]^2}{{2a \cdot \log(\frac{1}{2\pi K \sqrt{ab}})}} + \frac{{[(x - \mu_1) \cdot \sin(\theta)-(y - \mu_2) \cdot \cos(\theta)}]^2}{{2b \cdot \log(\frac{1}{2\pi K \sqrt{ab}})}} = 1
