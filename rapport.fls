@@ -123,11 +123,11 @@ INPUT C:\Users\Matth\AppData\Local\Programs\MiKTeX\fonts\tfm\public\amsfonts\sym
 INPUT C:\Users\Matth\AppData\Local\Programs\MiKTeX\fonts\tfm\public\amsfonts\symbols\msbm10.tfm
 INPUT C:\Users\Matth\AppData\Local\Programs\MiKTeX\fonts\tfm\public\amsfonts\symbols\msbm7.tfm
 INPUT C:\Users\Matth\AppData\Local\Programs\MiKTeX\fonts\tfm\public\amsfonts\symbols\msbm5.tfm
+OUTPUT rapport.pdf
+INPUT C:\Users\Matth\AppData\Local\MiKTeX\fonts\map\pdftex\pdftex.map
 INPUT C:\Users\Matth\AppData\Local\Programs\MiKTeX\fonts\tfm\public\cm\cmbx10.tfm
 INPUT C:\Users\Matth\AppData\Local\Programs\MiKTeX\fonts\tfm\public\cm\cmbx7.tfm
 INPUT C:\Users\Matth\AppData\Local\Programs\MiKTeX\fonts\tfm\public\cm\cmbx5.tfm
-OUTPUT rapport.pdf
-INPUT C:\Users\Matth\AppData\Local\MiKTeX\fonts\map\pdftex\pdftex.map
 INPUT rapport.aux
 INPUT C:\Users\Matth\AppData\Local\Programs\MiKTeX\fonts\type1\public\amsfonts\cm\cmbx12.pfb
 INPUT C:\Users\Matth\AppData\Local\Programs\MiKTeX\fonts\type1\public\amsfonts\cm\cmbx12.pfb
@@ -143,6 +143,8 @@ INPUT C:\Users\Matth\AppData\Local\Programs\MiKTeX\fonts\type1\public\amsfonts\c
 INPUT C:\Users\Matth\AppData\Local\Programs\MiKTeX\fonts\type1\public\amsfonts\cm\cmr12.pfb
 INPUT C:\Users\Matth\AppData\Local\Programs\MiKTeX\fonts\type1\public\amsfonts\cm\cmr17.pfb
 INPUT C:\Users\Matth\AppData\Local\Programs\MiKTeX\fonts\type1\public\amsfonts\cm\cmr17.pfb
+INPUT C:\Users\Matth\AppData\Local\Programs\MiKTeX\fonts\type1\public\amsfonts\cm\cmr5.pfb
+INPUT C:\Users\Matth\AppData\Local\Programs\MiKTeX\fonts\type1\public\amsfonts\cm\cmr5.pfb
 INPUT C:\Users\Matth\AppData\Local\Programs\MiKTeX\fonts\type1\public\amsfonts\cm\cmr7.pfb
 INPUT C:\Users\Matth\AppData\Local\Programs\MiKTeX\fonts\type1\public\amsfonts\cm\cmr7.pfb
 INPUT C:\Users\Matth\AppData\Local\Programs\MiKTeX\fonts\type1\public\amsfonts\cm\cmsy10.pfb

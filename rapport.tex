@@ -6,7 +6,7 @@
 
 \title{Projet Maths}
 \author{Matthias Zdravkovic, Ameen Mohd Fairuz}
-\date{May 2023}
+\date{Mai 2023}
 
 \begin{document}
 
@@ -19,11 +19,14 @@
 
 On part de la loi normale bidimensionnelle :
 $$f_Z(z) = \frac{1}{2\pi \sqrt{\det \Sigma}}exp(-\frac{1}{2}(z-\mu)^T\Sigma^{-1}(z-\mu))$$
-
 On pose
 $$\Sigma = U \cdot \Lambda \cdot U^T$$
+$$ \Leftrightarrow \det \Sigma = \det U \cdot \det \Lambda \cdot \det (U^T) $$
+\begin{center}
+$(\det U)^{2}=1$ car c'est une matrice orthogonale
+\end{center}
+$$\Leftrightarrow \det \Sigma =\det \Lambda$$
 avec $\Sigma \in M_2(\mathbb{R})$ matrice symétrique positive définie, $U \in M_2(\mathbb{R})$ matrice orthogonale et $\Lambda \in M_2(\mathbb{R})$ matrice diagonale à coefficients positifs.\\
-
 On pose
 \[
 U = \begin{pmatrix}
@@ -31,7 +34,6 @@ U = \begin{pmatrix}
     \sin(\theta) & \cos(\theta)
 \end{pmatrix}
 \]
-
 et 
 
 \[
@@ -40,14 +42,13 @@ et
     0 & b
 \end{pmatrix}
 \]
+avec 
+$$ \Sigma^{-1} = U \cdot \Lambda^{-1} \cdot U^{-1}$$
+$$\Leftrightarrow \Sigma^{-1} = \begin{pmatrix} \cos(\theta) & -\sin(\theta) \\ \sin(\theta) & \cos(\theta) \end{pmatrix} \cdot \begin{pmatrix} \frac{1}{a} & 0 \\ 0 & \frac{1}{b} \end{pmatrix} \cdot \begin{pmatrix} \cos(\theta) & -\sin(\theta) \\ \sin(\theta) & \cos(\theta) \end{pmatrix}^{-1}$$
+$$\Leftrightarrow \Sigma^{-1} = \begin{pmatrix} \cos(\theta) & -\sin(\theta) \\ \sin(\theta) & \cos(\theta) \end{pmatrix} \cdot \begin{pmatrix} \frac{1}{a} & 0 \\ 0 & \frac{1}{b} \end{pmatrix} \cdot \frac{1}{\cos^{2} \theta + \sin^{2} \theta}\begin{pmatrix} \cos(\theta) & \sin(\theta) \\ -\sin(\theta) & \cos(\theta) \end{pmatrix}$$
+$$\Leftrightarrow \Sigma^{-1} = \begin{pmatrix} \cos(\theta) & -\sin(\theta) \\ \sin(\theta) & \cos(\theta) \end{pmatrix} \cdot \begin{pmatrix} \frac{1}{a} & 0 \\ 0 & \frac{1}{b} \end{pmatrix} \cdot \begin{pmatrix} \cos(\theta) & \sin(\theta) \\ -\sin(\theta) & \cos(\theta) \end{pmatrix}$$
+$$\Leftrightarrow \Sigma^{-1} = \begin{pmatrix} \frac{b\cos^{2} \theta + a\sin^{2} \theta}{ab} & \frac{b\sin \theta\cos \theta - a\sin \theta\cos \theta}{ab} \\ \frac{b\sin \theta\cos \theta - a\sin \theta\cos \theta}{ab} & \frac{b\sin^{2} \theta + a\sin^{2} \theta}{ab}\end{pmatrix} $$
 
-
-\[
-\Sigma = \begin{pmatrix}
-    \sigma_{x}^2 & \sigma_{xy} \\
-    \sigma_{xy} & \sigma_{y}^2 
-\end{pmatrix}
-\]
 
 \[
     \Leftrightarrow \frac{{[(x - \mu_1) \cdot \cos(\theta) + (y - \mu_2) \cdot \sin(\theta)}]^2}{{2a \cdot \log(\frac{1}{2\pi K \sqrt{ab}})}} + \frac{{[(x - \mu_1) \cdot \sin(\theta)-(y - \mu_2) \cdot \cos(\theta)}]^2}{{2b \cdot \log(\frac{1}{2\pi K \sqrt{ab}})}} = 1
@@ -61,7 +62,12 @@ et
 
 Ici, le centre de l'ellipse est donné par $\mathbf{\mu} = (\mu_1, \mu_2)$, $\sqrt{2a \log(\frac{1}{2\pi K \sqrt{ab}})}$ est la demi-longueur de l'axe principal et $\sqrt{2b \log(\frac{1}{2\pi K \sqrt{ab}})}$ la demi-longueur de l'axe secondaire, $K$ est la constante de normalisation et $\theta$ est l'angle de rotation de l'ellipse.
 
-
+\[
+\Sigma = \begin{pmatrix}
+    \sigma_{x}^2 & \sigma_{xy} \\
+    \sigma_{xy} & \sigma_{y}^2 
+\end{pmatrix}
+\]
 
 \end{document}
 
