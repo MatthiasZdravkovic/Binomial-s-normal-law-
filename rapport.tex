@@ -1,5 +1,8 @@
 \documentclass{article}
 \usepackage{graphicx} % Required for inserting images
+\usepackage{amsmath}
+\usepackage{marginnote}
+\usepackage{amssymb}
 
 \title{Projet Maths}
 \author{Matthias Zdravkovic, Ameen Mohd Fairuz}
@@ -10,27 +13,55 @@
 
 \maketitle
 
-\section{Introduction}
+\section{Développements mathématiques}
 
-This is a sample paragraph. LaTeX allows you to write plain text directly without any special commands. You can include spaces, line breaks, and punctuation marks just like you would in any regular text editor.
+\reversemarginpar\marginnote{1. a)}[0cm]
 
-LaTeX also provides several formatting commands to modify the appearance of text. For example, you can make text \textbf{bold}, \textit{italic}, \underline{underlined}, or \texttt{monospaced}. These commands can be applied to individual words or phrases within a paragraph.
+On part de la loi normale bidimensionnelle :
+$$f_Z(z) = \frac{1}{2\pi \sqrt{\det \Sigma}}exp(-\frac{1}{2}(z-\mu)^T\Sigma^{-1}(z-\mu))$$
 
-You can create lists using the \texttt{itemize} or \texttt{enumerate} environments. Here's an example of an itemized list:
+On pose
+$$\Sigma = U \cdot \Lambda \cdot U^T$$
+avec $\Sigma \in M_2(\mathbb{R})$ matrice symétrique positive définie, $U \in M_2(\mathbb{R})$ matrice orthogonale et $\Lambda \in M_2(\mathbb{R})$ matrice diagonale à coefficients positifs.\\
 
-\begin{itemize}
-    \item First item
-    \item Second item
-    \item Third item
-\end{itemize}
+On pose
+\[
+U = \begin{pmatrix}
+    \cos(\theta) & -\sin(\theta) \\
+    \sin(\theta) & \cos(\theta)
+\end{pmatrix}
+\]
 
-LaTeX also supports mathematical expressions using inline math mode, such as $E = mc^2$, or display math mode:
+et 
+
+\[
+\Lambda = \begin{pmatrix}
+    a & 0 \\
+    0 & b
+\end{pmatrix}
+\]
+
+
+\[
+\Sigma = \begin{pmatrix}
+    \sigma_{x}^2 & \sigma_{xy} \\
+    \sigma_{xy} & \sigma_{y}^2 
+\end{pmatrix}
+\]
 
 \[
     \Leftrightarrow \frac{{[(x - \mu_1) \cdot \cos(\theta) + (y - \mu_2) \cdot \sin(\theta)}]^2}{{2a \cdot \log(\frac{1}{2\pi K \sqrt{ab}})}} + \frac{{[(x - \mu_1) \cdot \sin(\theta)-(y - \mu_2) \cdot \cos(\theta)}]^2}{{2b \cdot \log(\frac{1}{2\pi K \sqrt{ab}})}} = 1
 \]
 
+\[
+    \Leftrightarrow \frac{1}{2\pi \sqrt{ab}}exp(\frac{{[(x - \mu_1) \cdot \cos(\theta) + (y - \mu_2) \cdot \sin(\theta)}]^2}{{2a \cdot \log(\frac{1}{2\pi K \sqrt{ab}})}} + \frac{{[(x - \mu_1) \cdot \sin(\theta)-(y - \mu_2) \cdot \cos(\theta)}]^2}{{2b \cdot \log(\frac{1}{2\pi K \sqrt{ab}})}}) = 1
+\]
+
+
+
 Ici, le centre de l'ellipse est donné par $\mathbf{\mu} = (\mu_1, \mu_2)$, $\sqrt{2a \log(\frac{1}{2\pi K \sqrt{ab}})}$ est la demi-longueur de l'axe principal et $\sqrt{2b \log(\frac{1}{2\pi K \sqrt{ab}})}$ la demi-longueur de l'axe secondaire, $K$ est la constante de normalisation et $\theta$ est l'angle de rotation de l'ellipse.
+
+
 
 \end{document}
 
