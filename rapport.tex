@@ -18,7 +18,7 @@
 \reversemarginpar\marginnote{1. a)}[0cm]
 
 On part de la loi normale bidimensionnelle :
-$$f_Z(z) = \frac{1}{2\pi \sqrt{\det \Sigma}}exp(-\frac{1}{2}(z-\mu)^T\Sigma^{-1}(z-\mu))$$
+$$f_Z(z) = \frac{1}{2\pi \sqrt{\det \Sigma}}exp(-\frac{1}{2}{}^{t}(z-\mu)\Sigma^{-1}(z-\mu))$$
 On pose
 $$\Sigma = U \cdot \Lambda \cdot U^T$$
 $$ \Leftrightarrow \det \Sigma = \det U \cdot \det \Lambda \cdot \det (U^T) $$
@@ -68,20 +68,70 @@ On obtient donc :
 
 $$ f_Z(z) = \frac{1}{2\pi \sqrt{ab}}exp(-\frac{((x-\mu_1)\sin\theta-(y-\mu_2)\cos\theta)^{2}}{2b}-\frac{((x-\mu_1)\cos\theta+(y-\mu_2)\sin\theta)^{2}}{2a})=K$$
 
-$$\Leftrightarrow  f_Z(z) = \frac{((x-\mu_1)\sin\theta-(y-\mu_2)\cos\theta)^{2}}{2b}+\frac{((x-\mu_1)\cos\theta+(y-\mu_2)\sin\theta)^{2}}{2a}=-\ln(K2\pi\sqrt{ab})$$
+$$\Leftrightarrow   \frac{((x-\mu_1)\sin\theta-(y-\mu_2)\cos\theta)^{2}}{2b}+\frac{((x-\mu_1)\cos\theta+(y-\mu_2)\sin\theta)^{2}}{2a}=-\ln(K2\pi\sqrt{ab})$$
 
-$$\Leftrightarrow  f_Z(z) = \frac{((x-\mu_1)\sin\theta-(y-\mu_2)\cos\theta)^{2}}{2b\ln(\frac{1}{K2\pi\sqrt{ab}})}+\frac{((x-\mu_1)\cos\theta+(y-\mu_2)\sin\theta)^{2}}{2a\ln(\frac{1}{K2\pi\sqrt{ab}})}=1$$
+$$\Leftrightarrow   \frac{((x-\mu_1)\sin\theta-(y-\mu_2)\cos\theta)^{2}}{2b\ln(\frac{1}{K2\pi\sqrt{ab}})}+\frac{((x-\mu_1)\cos\theta+(y-\mu_2)\sin\theta)^{2}}{2a\ln(\frac{1}{K2\pi\sqrt{ab}})}=1$$
 
 Ici, le centre de l'ellipse est donné par $\mathbf{\mu} = (\mu_1, \mu_2)$, $\sqrt{2a \log(\frac{1}{2\pi K \sqrt{ab}})}$ est la demi-longueur de l'axe principal et $\sqrt{2b \log(\frac{1}{2\pi K \sqrt{ab}})}$ la demi-longueur de l'axe secondaire, $K$ est la constante de normalisation et $\theta$ est l'angle de rotation de l'ellipse.
 
 \reversemarginpar\marginnote{1. b)}[0cm]
 
-\[
-\Sigma = \begin{pmatrix}
-    \sigma_{x}^2 & \sigma_{xy} \\
-    \sigma_{xy} & \sigma_{y}^2 
-\end{pmatrix}
-\]
+Pour calculer la probabilité qu'un point tiré selon la loi $Z$ appartienne à la surface interne $S_k$ délimitée par l'ellipse d'isodensité $K$, on intègre la densité de $Z$ par la surface de l'ellipse:
+$$P(Z \in S_k) = \int \frac{1}{\sqrt{2\pi^2det\Sigma}}exp(-\frac{1}{2} {}^{t}(z-\mu)\Sigma^{-1}(z-\mu)) dz$$
+$$\Leftrightarrow \int\int_{S_k}^{} \frac{1}{2\pi\sqrt{ab}}exp(-\frac{[(x-\mu_1)cos\theta+(y-\mu_2)sin\theta]^2}{2a}-\frac{[(x-\mu_1)sin\theta-(y-\mu_2)cos\theta]^2}{2b})dxdy$$
+
+Pour simplifier les calculs, on fait un changement de variable:
+
+$$\left\{\begin{matrix}x_1=\frac{(x-\mu_1)cos\theta+(y-\mu_2)sin\theta}{\sqrt{2a}}
+    \\ x_2=\frac{(x-\mu_1)sin\theta-(y-\mu_2)cos\theta}{\sqrt{2a}}
+    \end{matrix}\right.$$
+$$\Leftrightarrow 
+\left\{\begin{matrix}x=\sqrt{2a}cos\theta x_1+\sqrt{2b}sin\theta y_1 +\mu_1
+\\ y=\sqrt{2a}sin\theta x_1-\sqrt{2b}cos\theta y_1 +\mu_2
+\end{matrix}\right.$$
+$$\Leftrightarrow 
+\frac{\partial x}{\partial x_1}=\sqrt{2a}cos\theta\; ;\; \frac{\partial x}{\partial y_1}=\sqrt{2b}sin\theta$$
+$$
+\frac{\partial y}{\partial x_1}=\sqrt{2a}sin\theta\; ;\; \frac{\partial y}{\partial y_1}=-\sqrt{2b}cos\theta$$
+
+En changeant $(x,y)$ à $(x_1,y_1)$, nous avons maintenant:
+
+$$\int\int_{S_k}^{} \frac{1}{2\pi\sqrt{ab}}exp(-x_1^2-y_1^2)\left| \begin{matrix}\frac{\partial x}{\partial x_1}
+    &  \frac{\partial x}{\partial y_1}
+    &  \\\frac{\partial y}{\partial x_1}
+    & \frac{\partial y}{\partial y_1}
+\end{matrix} \right|dx_1dy_1$$
+$$\Leftrightarrow \int\int_{S_k}^{} \frac{1}{2\pi\sqrt{ab}}exp(-x_1^2-y_1^2)\left| -\sqrt{4ab}cos^2\theta -\sqrt{4ab}sin^2\theta\right|dx_1dy_1$$
+$$\Leftrightarrow \int\int_{S_k}^{} \frac{2\sqrt{ab}}{2\pi\sqrt{ab}}exp(-x_1^2-y_1^2)dx_1dy_1$$
+$$\Leftrightarrow \int\int_{S_k}^{} \frac{1}{\pi}exp(-x_1^2-y_1^2)dx_1dy_1$$
+
+Changement en base polaire: on utilise $x_1=rcos\varphi$ et $y_1=rsin\varphi$
+
+$$\int\int_{S_k}^{} \frac{1}{\pi}exp(-r^2)rdrd\varphi$$
+$$\Leftrightarrow \frac{1}{\pi}\int_{0}^{r}\int_{0}^{2\pi} re^{-r}d\varphi dr$$
+$$\Leftrightarrow \int_{0}^{r} 2re^{-r} dr$$
+
+Or, ici il faut utiliser $r=$ l'équation de l'ellipse en base $(r,\varphi)$
+
+Pour cela, nous reprenons l'équation de l'ellipse trouvée à la question 1.a)
+$$\frac{((x-\mu_1)\sin\theta-(y-\mu_2)\cos\theta)^{2}}{2b\ln(\frac{1}{K2\pi\sqrt{ab}})}+\frac{((x-\mu_1)\cos\theta+(y-\mu_2)\sin\theta)^{2}}{2a\ln(\frac{1}{K2\pi\sqrt{ab}})}=1$$
+$$\Leftrightarrow \frac{x_1^2}{\ln(\frac{1}{K2\pi\sqrt{ab}})}+\frac{y_1^2}{\ln(\frac{1}{K2\pi\sqrt{ab}})}=1$$
+$$\Leftrightarrow \frac{r^2}{\ln(\frac{1}{K2\pi\sqrt{ab}})}=1$$
+$$\Leftrightarrow r=\sqrt{\ln(\frac{1}{K2\pi\sqrt{ab}})}$$
+
+Nous utilisons cette équation de $r$ comme borne superieure de notre intégrale:
+$$\int_{0}^{\sqrt{\ln(\frac{1}{K2\pi\sqrt{ab}})}} 2re^{-r} dr$$
+$$\Leftrightarrow \left[ -e^{r^2} \right]_{0}^{\sqrt{\ln(\frac{1}{K2\pi\sqrt{ab}})}}$$
+$$\Leftrightarrow -e^{\sqrt{\ln(\frac{1}{K2\pi\sqrt{ab}})}}+e^0$$
+
+Nous trouvons donc:
+
+$$p=P(Z \in S_k)$$
+$$\Leftrightarrow p=1-2\pi K\sqrt{ab}$$
+
+
+
+
 
 \reversemarginpar\marginnote{2.}[0cm]
 \[
@@ -90,5 +140,6 @@ Ici, le centre de l'ellipse est donné par $\mathbf{\mu} = (\mu_1, \mu_2)$, $\sq
     \sigma_{xy} & \sigma_{y}^2 
 \end{pmatrix}
 \]
+
 \end{document}
 
