@@ -51,23 +51,30 @@ $$\Leftrightarrow \Sigma^{-1} = \begin{pmatrix} \frac{b\cos^{2} \theta + a\sin^{
 
 On injecte dans la formule de $f_Z(z)$ :
 $$f_Z(z) = \frac{1}{2\pi \sqrt{ab}}exp(-\frac{1}{2}\begin{pmatrix}x-\mu_1 & y-\mu_2 \end{pmatrix}\cdot\begin{pmatrix} \frac{b\cos^{2} \theta + a\sin^{2} \theta}{ab} & \frac{b\sin \theta\cos \theta - a\sin \theta\cos \theta}{ab} \\ \frac{b\sin \theta\cos \theta - a\sin \theta\cos \theta}{ab} & \frac{b\sin^{2} \theta + a\sin^{2} \theta}{ab}\end{pmatrix}\begin{pmatrix}x-\mu_1 \\ y-\mu_2 \end{pmatrix})$$
-$$ \Leftrightarrow f_Z(z) = \frac{1}{2\pi \sqrt{ab}}exp(-\frac{1}{2}\begin{pmatrix}x-\mu_1 & y-\mu_2 \end{pmatrix}\cdot\begin{pmatrix} \frac{b\cos^{2} \theta + a\sin^{2} \theta}{ab} & \frac{b\sin \theta\cos \theta - a\sin \theta\cos \theta}{ab} \\ \frac{b\sin \theta\cos \theta - a\sin \theta\cos \theta}{ab} & \frac{b\sin^{2} \theta + a\sin^{2} \theta}{ab}\end{pmatrix}\cdot\begin{pmatrix}x-\mu_1 \\ y-\mu_2 \end{pmatrix})$$
-\begin{multline*} \Leftrightarrow f_Z(z) = \frac{1}{2\pi \sqrt{ab}}exp(-\frac{1}{2}\begin{pmatrix}x-\mu_1 & y-\mu_2 \end{pmatrix}\frac{1}{ab}\cdot\begin{pmatrix} b\cos^{2} \theta + a\sin^{2} \theta & b\sin \theta\cos \theta - a\sin \theta\cos \theta \\ b\sin \theta\cos \theta - a\sin \theta\cos \theta & b\sin^{2} \theta + a\sin^{2} \theta\end{pmatrix}\\\cdot\begin{pmatrix}x-\mu_1 \\ y-\mu_2 \end{pmatrix})\end{multline*}
 \begin{multline*}\Leftrightarrow f_Z(z) = \frac{1}{2\pi \sqrt{ab}}exp(-\frac{1}{2ab}\begin{pmatrix}x-\mu_1 & y-\mu_2 \end{pmatrix}\cdot\begin{pmatrix} b\cos^{2} \theta + a\sin^{2} \theta & b\sin \theta\cos \theta - a\sin \theta\cos \theta \\ b\sin \theta\cos \theta - a\sin \theta\cos \theta & b\sin^{2} \theta + a\sin^{2} \theta\end{pmatrix}\\\cdot \begin{pmatrix}x-\mu_1 \\ y-\mu_2 \end{pmatrix})\end{multline*}
 
-Calculons l'intérieur de l'exponentielle :
+Calculons le produit matriciel A dans l'exponentielle :
 
-\[
-    \Leftrightarrow \frac{{[(x - \mu_1) \cdot \cos(\theta) + (y - \mu_2) \cdot \sin(\theta)}]^2}{{2a \cdot \log(\frac{1}{2\pi K \sqrt{ab}})}} + \frac{{[(x - \mu_1) \cdot \sin(\theta)-(y - \mu_2) \cdot \cos(\theta)}]^2}{{2b \cdot \log(\frac{1}{2\pi K \sqrt{ab}})}} = 1
-\]
+$$ A=\begin{pmatrix}x-\mu_1 & y-\mu_2 \end{pmatrix}\cdot\begin{pmatrix} b\cos^{2} \theta + a\sin^{2} \theta & b\sin \theta\cos \theta - a\sin \theta\cos \theta \\ b\sin \theta\cos \theta - a\sin \theta\cos \theta & b\sin^{2} \theta + a\sin^{2} \theta\end{pmatrix}\cdot \begin{pmatrix}x-\mu_1 \\ y-\mu_2 \end{pmatrix}$$ 
+\begin{multline*} \Leftrightarrow A=((a\sin^2\theta+b\cos^2\theta)(x-\mu_1)+\cos\theta\sin\theta(b-a)(y-\mu_2))(x-\mu_1)\\+((b\sin^2\theta+a\cos^2\theta)(y-\mu_2)+\cos\theta\sin\theta(b-a)(x-\mu_1))(y-\mu_2)\end{multline*}
+\begin{multline*} \Leftrightarrow A=(a\sin^2\theta+b\cos^2\theta)(x-\mu_1)^2+\cos\theta\sin\theta(b-a)(x-\mu_1)(y-\mu_2)\\+(b\sin^2\theta+a\cos^2\theta)(y-\mu_2)^2+\cos\theta\sin\theta(b-a)(x-\mu_1)(y-\mu_2)\end{multline*}
+\begin{multline*} \Leftrightarrow A=(a\sin^2\theta+b\cos^2\theta)(x-\mu_1)^2+2\cos\theta\sin\theta(b-a)(x-\mu_1)(y-\mu_2)\\+(b\sin^2\theta+a\cos^2\theta)(y-\mu_2)^2\end{multline*}
+\begin{multline*} \Leftrightarrow A=a\sin^2\theta(x-\mu_1)^2+b\cos^2\theta(x-\mu_1)^2+2\cos\theta\sin\theta(b-a)(x-\mu_1)(y-\mu_2)\\+b\sin^2\theta(y-\mu_2)^2+a\cos^2\theta(y-\mu_2)^2\end{multline*}
+\begin{multline*} \Leftrightarrow A=a(\sin^2\theta(x-\mu_1)^2+\cos^2\theta(y-\mu_2)^2)+2\cos\theta\sin\theta(b-a)(x-\mu_1)(y-\mu_2)\\+b(\sin^2\theta(y-\mu_2)^2+\cos^2\theta(x-\mu_1)^2)\end{multline*}
+\begin{multline*} \Leftrightarrow A=a((x-\mu_1)^2\sin^2\theta+(y-\mu_2)^2\cos^2\theta-2\cos\theta\sin\theta(x-\mu_1)(y-\mu_2))\\+b((y-\mu_2)^2\sin^2\theta+(x-\mu_1)^2\cos^2\theta+2\cos\theta\sin\theta(x-\mu_1)(y-\mu_2))\end{multline*}
+$$ \Leftrightarrow A=a((x-\mu_1)\sin\theta-(y-\mu_2)\cos\theta)^{2}+b((x-\mu_1)\cos\theta+(y-\mu_2)\sin\theta)^{2}$$
 
-\[
-    \Leftrightarrow \frac{1}{2\pi \sqrt{ab}}exp(\frac{{[(x - \mu_1) \cdot \cos(\theta) + (y - \mu_2) \cdot \sin(\theta)}]^2}{{2a \cdot \log(\frac{1}{2\pi K \sqrt{ab}})}} + \frac{{[(x - \mu_1) \cdot \sin(\theta)-(y - \mu_2) \cdot \cos(\theta)}]^2}{{2b \cdot \log(\frac{1}{2\pi K \sqrt{ab}})}}) = 1
-\]
+On obtient donc :
 
+$$ f_Z(z) = \frac{1}{2\pi \sqrt{ab}}exp(-\frac{((x-\mu_1)\sin\theta-(y-\mu_2)\cos\theta)^{2}}{2b}-\frac{((x-\mu_1)\cos\theta+(y-\mu_2)\sin\theta)^{2}}{2a})=K$$
 
+$$\Leftrightarrow  f_Z(z) = \frac{((x-\mu_1)\sin\theta-(y-\mu_2)\cos\theta)^{2}}{2b}+\frac{((x-\mu_1)\cos\theta+(y-\mu_2)\sin\theta)^{2}}{2a}=-\ln(K2\pi\sqrt{ab})$$
+
+$$\Leftrightarrow  f_Z(z) = \frac{((x-\mu_1)\sin\theta-(y-\mu_2)\cos\theta)^{2}}{2b\ln(\frac{1}{K2\pi\sqrt{ab}})}+\frac{((x-\mu_1)\cos\theta+(y-\mu_2)\sin\theta)^{2}}{2a\ln(\frac{1}{K2\pi\sqrt{ab}})}=1$$
 
 Ici, le centre de l'ellipse est donné par $\mathbf{\mu} = (\mu_1, \mu_2)$, $\sqrt{2a \log(\frac{1}{2\pi K \sqrt{ab}})}$ est la demi-longueur de l'axe principal et $\sqrt{2b \log(\frac{1}{2\pi K \sqrt{ab}})}$ la demi-longueur de l'axe secondaire, $K$ est la constante de normalisation et $\theta$ est l'angle de rotation de l'ellipse.
+
+\reversemarginpar\marginnote{1. b)}[0cm]
 
 \[
 \Sigma = \begin{pmatrix}
@@ -76,5 +83,12 @@ Ici, le centre de l'ellipse est donné par $\mathbf{\mu} = (\mu_1, \mu_2)$, $\sq
 \end{pmatrix}
 \]
 
+\reversemarginpar\marginnote{2.}[0cm]
+\[
+\Sigma = \begin{pmatrix}
+    \sigma_{x}^2 & \sigma_{xy} \\
+    \sigma_{xy} & \sigma_{y}^2 
+\end{pmatrix}
+\]
 \end{document}
 
