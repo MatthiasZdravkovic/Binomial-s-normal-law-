@@ -156,6 +156,7 @@ $$= \sum_{i=1}^{N} (\ln (\frac{1}{2\pi\sqrt{|\Sigma|}}exp(-\frac{1}{2}(z_i-\mu)^
 $$= \sum_{i=1}^{N} (\ln \frac{1}{2\pi\sqrt{|\Sigma|}}) -\frac{1}{2}\sum_{i=1}^{N}((z_i-\mu)^{T}\Sigma^{-1}(z_i-\mu))$$
 $$= \sum_{i=1}^{N} (\ln \frac{1}{2\pi\sqrt{|\Sigma|}}) -\frac{1}{2}\sum_{i=1}^{N}(z_i^{T}\Sigma^{-1}z_i - z_i^{T}\Sigma^{-1}\mu - \mu^{T}\Sigma^{-1}z_i + \mu^{T}\Sigma^{-1}\mu)$$
 $$= \sum_{i=1}^{N} (\ln \frac{1}{2\pi\sqrt{|\Sigma|}}) -\frac{1}{2}\sum_{i=1}^{N}z_i^{T}\Sigma^{-1}z_i + \frac{1}{2}\sum_{i=1}^{N}z_i^{T}\Sigma^{-1}\mu + \frac{1}{2}\sum_{i=1}^{N}\mu^{T}\Sigma^{-1}z_i - \frac{1}{2}\sum_{i=1}^{N}\mu^{T}\Sigma^{-1}\mu$$
+\clearpage
 On dérive par rapport à $\mu$ et on cherche le maximum. En sachant que pour n'importe quel vecteur v de taille 2 et matrice M de taille 2x2, on a\footnote{https://www.di.ens.fr/~fbach/courses/fall2009/formulaire.pdf}\footnote{https://en.wikipedia.org/wiki/Matrixcalculus} : 
 $$\frac{\partial (v^{T}Mv)}{\partial v} = (M+M^{T})v$$
 $$\frac{\partial v^{T}M}{\partial v} = M^{T}$$
