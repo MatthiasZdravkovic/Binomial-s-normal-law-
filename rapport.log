@@ -1,14 +1,14 @@
-This is pdfTeX, Version 3.141592653-2.6-1.40.25 (MiKTeX 23.5) (preloaded format=pdflatex 2023.5.30)  4 JUN 2023 14:42
+This is pdfTeX, Version 3.141592653-2.6-1.40.25 (MiKTeX 23.5) (preloaded format=pdflatex 2023.6.3)  4 JUN 2023 16:50
 entering extended mode
  restricted \write18 enabled.
  file:line:error style messages enabled.
  %&-line parsing enabled.
-**"c:/Users/Matth/Documents/IR 1A/ProjetMaths/Binomial-s-normal-law-/rapport.tex"
-(c:/Users/Matth/Documents/IR 1A/ProjetMaths/Binomial-s-normal-law-/rapport.tex
+**c:/Users/nurha/Downloads/Binomial-s-normal-law--master/Binomial-s-normal-law--master/rapport.tex
+(c:/Users/nurha/Downloads/Binomial-s-normal-law--master/Binomial-s-normal-law--master/rapport.tex
 LaTeX2e <2022-11-01> patch level 1
-L3 programming layer <2023-05-15> (C:\Users\Matth\AppData\Local\Programs\MiKTeX\tex/latex/base\article.cls
+L3 programming layer <2023-05-15> (C:\Users\nurha\AppData\Local\Programs\MiKTeX\tex/latex/base\article.cls
 Document Class: article 2022/07/02 v1.4n Standard LaTeX document class
-(C:\Users\Matth\AppData\Local\Programs\MiKTeX\tex/latex/base\size10.clo
+(C:\Users\nurha\AppData\Local\Programs\MiKTeX\tex/latex/base\size10.clo
 File: size10.clo 2022/07/02 v1.4n Standard LaTeX file (size option)
 )
 \c@part=\count185
@@ -22,39 +22,39 @@ File: size10.clo 2022/07/02 v1.4n Standard LaTeX file (size option)
 \abovecaptionskip=\skip48
 \belowcaptionskip=\skip49
 \bibindent=\dimen140
-) (C:\Users\Matth\AppData\Local\Programs\MiKTeX\tex/latex/graphics\graphicx.sty
+) (C:\Users\nurha\AppData\Local\Programs\MiKTeX\tex/latex/graphics\graphicx.sty
 Package: graphicx 2021/09/16 v1.2d Enhanced LaTeX Graphics (DPC,SPQR)
- (C:\Users\Matth\AppData\Local\Programs\MiKTeX\tex/latex/graphics\keyval.sty
+ (C:\Users\nurha\AppData\Local\Programs\MiKTeX\tex/latex/graphics\keyval.sty
 Package: keyval 2022/05/29 v1.15 key=value parser (DPC)
 \KV@toks@=\toks16
-) (C:\Users\Matth\AppData\Local\Programs\MiKTeX\tex/latex/graphics\graphics.sty
+) (C:\Users\nurha\AppData\Local\Programs\MiKTeX\tex/latex/graphics\graphics.sty
 Package: graphics 2022/03/10 v1.4e Standard LaTeX Graphics (DPC,SPQR)
- (C:\Users\Matth\AppData\Local\Programs\MiKTeX\tex/latex/graphics\trig.sty
+ (C:\Users\nurha\AppData\Local\Programs\MiKTeX\tex/latex/graphics\trig.sty
 Package: trig 2021/08/11 v1.11 sin cos tan (DPC)
-) (C:\Users\Matth\AppData\Local\Programs\MiKTeX\tex/latex/graphics-cfg\graphics.cfg
+) (C:\Users\nurha\AppData\Local\Programs\MiKTeX\tex/latex/graphics-cfg\graphics.cfg
 File: graphics.cfg 2016/06/04 v1.11 sample graphics configuration
 )
 Package graphics Info: Driver file: pdftex.def on input line 107.
- (C:\Users\Matth\AppData\Local\Programs\MiKTeX\tex/latex/graphics-def\pdftex.def
+ (C:\Users\nurha\AppData\Local\Programs\MiKTeX\tex/latex/graphics-def\pdftex.def
 File: pdftex.def 2022/09/22 v1.2b Graphics/color driver for pdftex
 ))
 \Gin@req@height=\dimen141
 \Gin@req@width=\dimen142
-) (C:\Users\Matth\AppData\Local\Programs\MiKTeX\tex/latex/amsmath\amsmath.sty
+) (C:\Users\nurha\AppData\Local\Programs\MiKTeX\tex/latex/amsmath\amsmath.sty
 Package: amsmath 2022/04/08 v2.17n AMS math features
 \@mathmargin=\skip50
 
 For additional information on amsmath, use the `?' option.
-(C:\Users\Matth\AppData\Local\Programs\MiKTeX\tex/latex/amsmath\amstext.sty
+(C:\Users\nurha\AppData\Local\Programs\MiKTeX\tex/latex/amsmath\amstext.sty
 Package: amstext 2021/08/26 v2.01 AMS text
- (C:\Users\Matth\AppData\Local\Programs\MiKTeX\tex/latex/amsmath\amsgen.sty
+ (C:\Users\nurha\AppData\Local\Programs\MiKTeX\tex/latex/amsmath\amsgen.sty
 File: amsgen.sty 1999/11/30 v2.0 generic functions
 \@emptytoks=\toks17
 \ex@=\dimen143
-)) (C:\Users\Matth\AppData\Local\Programs\MiKTeX\tex/latex/amsmath\amsbsy.sty
+)) (C:\Users\nurha\AppData\Local\Programs\MiKTeX\tex/latex/amsmath\amsbsy.sty
 Package: amsbsy 1999/11/29 v1.2d Bold Symbols
 \pmbraise@=\dimen144
-) (C:\Users\Matth\AppData\Local\Programs\MiKTeX\tex/latex/amsmath\amsopn.sty
+) (C:\Users\nurha\AppData\Local\Programs\MiKTeX\tex/latex/amsmath\amsopn.sty
 Package: amsopn 2022/04/08 v2.04 operator names
 )
 \inf@bad=\count193
@@ -104,19 +104,19 @@ LaTeX Info: Redefining \Relbar on input line 971.
 \mathdisplay@stack=\toks21
 LaTeX Info: Redefining \[ on input line 2953.
 LaTeX Info: Redefining \] on input line 2954.
-) (C:\Users\Matth\AppData\Local\Programs\MiKTeX\tex/latex/marginnote\marginnote.sty
+) (C:\Users\nurha\AppData\Local\Programs\MiKTeX\tex/latex/marginnote\marginnote.sty
 Package: marginnote 2018/08/09 v1.4b non floating margin notes for LaTeX
 \c@mn@abspage=\count271
-) (C:\Users\Matth\AppData\Local\Programs\MiKTeX\tex/latex/amsfonts\amssymb.sty
+) (C:\Users\nurha\AppData\Local\Programs\MiKTeX\tex/latex/amsfonts\amssymb.sty
 Package: amssymb 2013/01/14 v3.01 AMS font symbols
- (C:\Users\Matth\AppData\Local\Programs\MiKTeX\tex/latex/amsfonts\amsfonts.sty
+ (C:\Users\nurha\AppData\Local\Programs\MiKTeX\tex/latex/amsfonts\amsfonts.sty
 Package: amsfonts 2013/01/14 v3.01 Basic AMSFonts support
 \symAMSa=\mathgroup4
 \symAMSb=\mathgroup5
 LaTeX Font Info:    Redeclaring math symbol \hbar on input line 98.
 LaTeX Font Info:    Overwriting math alphabet `\mathfrak' in version `bold'
 (Font)                  U/euf/m/n --> U/euf/b/n on input line 106.
-)) (C:\Users\Matth\AppData\Local\Programs\MiKTeX\tex/latex/l3backend\l3backend-pdftex.def
+)) (C:\Users\nurha\AppData\Local\Programs\MiKTeX\tex/latex/l3backend\l3backend-pdftex.def
 File: l3backend-pdftex.def 2023-04-19 L3 backend support: PDF output (pdfTeX)
 \l__color_backend_stack_int=\count272
 \l__pdf_internal_box=\box53
@@ -137,7 +137,7 @@ LaTeX Font Info:    Checking defaults for OMX/cmex/m/n on input line 12.
 LaTeX Font Info:    ... okay on input line 12.
 LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 12.
 LaTeX Font Info:    ... okay on input line 12.
- (C:\Users\Matth\AppData\Local\Programs\MiKTeX\tex/context/base/mkii\supp-pdf.mkii
+ (C:\Users\nurha\AppData\Local\Programs\MiKTeX\tex/context/base/mkii\supp-pdf.mkii
 [Loading MPS to PDF converter (version 2006.09.02).]
 \scratchcounter=\count273
 \scratchdimen=\dimen152
@@ -150,98 +150,122 @@ LaTeX Font Info:    ... okay on input line 12.
 \MPnumerator=\count277
 \makeMPintoPDFobject=\count278
 \everyMPtoPDFconversion=\toks23
-) (C:\Users\Matth\AppData\Local\Programs\MiKTeX\tex/latex/epstopdf-pkg\epstopdf-base.sty
+) (C:\Users\nurha\AppData\Local\Programs\MiKTeX\tex/latex/epstopdf-pkg\epstopdf-base.sty
 Package: epstopdf-base 2020-01-24 v2.11 Base part for package epstopdf
 Package epstopdf-base Info: Redefining graphics rule for `.eps' on input line 485.
- (C:\Users\Matth\AppData\Local\Programs\MiKTeX\tex/latex/00miktex\epstopdf-sys.cfg
+ (C:\Users\nurha\AppData\Local\Programs\MiKTeX\tex/latex/00miktex\epstopdf-sys.cfg
 File: epstopdf-sys.cfg 2021/03/18 v2.0 Configuration of epstopdf for MiKTeX
 ))
-LaTeX Font Info:    Trying to load font information for U+msa on input line 15.
- (C:\Users\Matth\AppData\Local\Programs\MiKTeX\tex/latex/amsfonts\umsa.fd
+LaTeX Font Info:    Trying to load font information for U+msa on input line 14.
+ (C:\Users\nurha\AppData\Local\Programs\MiKTeX\tex/latex/amsfonts\umsa.fd
 File: umsa.fd 2013/01/14 v3.01 AMS symbols A
 )
-LaTeX Font Info:    Trying to load font information for U+msb on input line 15.
- (C:\Users\Matth\AppData\Local\Programs\MiKTeX\tex/latex/amsfonts\umsb.fd
+LaTeX Font Info:    Trying to load font information for U+msb on input line 14.
+ (C:\Users\nurha\AppData\Local\Programs\MiKTeX\tex/latex/amsfonts\umsb.fd
 File: umsb.fd 2013/01/14 v3.01 AMS symbols B
 )
-Package marginnote Info: Margin note 1.1 is on absolute page 1 on input line 19.
-Package marginnote Info: right page because not two side mode on input line 19.
-Package marginnote Info: xpos seems to be 134.26999pt on input line 19.
+Package marginnote Info: Margin note 1.1 is on absolute page 1 on input line 24.
+Package marginnote Info: right page because not two side mode on input line 24.
+Package marginnote Info: xpos seems to be 134.26999pt on input line 24.
+ [1
 
-Overfull \hbox (82.27966pt too wide) detected at line 54
+{C:/Users/nurha/AppData/Local/MiKTeX/fonts/map/pdftex/pdftex.map}]
+Overfull \hbox (82.27966pt too wide) detected at line 59
 \OML/cmm/m/it/10 f[]\OT1/cmr/m/n/10 (\OML/cmm/m/it/10 z\OT1/cmr/m/n/10 ) = []\OML/cmm/m/it/10 exp\OT1/cmr/m/n/10 (\OMS/cmsy/m/n/10 ^^@[] [] ^^A [] []\OT1/cmr/m/n/10 )
  []
 
-[1
 
-{C:/Users/Matth/AppData/Local/MiKTeX/fonts/map/pdftex/pdftex.map}]
-Overfull \hbox (110.99632pt too wide) detected at line 55
+Overfull \hbox (110.99632pt too wide) detected at line 60
  []$[]   \OMS/cmsy/m/n/10 , \OML/cmm/m/it/10 f[]\OT1/cmr/m/n/10 (\OML/cmm/m/it/10 z\OT1/cmr/m/n/10 ) = []\OML/cmm/m/it/10 exp\OT1/cmr/m/n/10 (\OMS/cmsy/m/n/10 ^^@[] [] ^^A []$ 
  []
 
 
-Overfull \hbox (37.60352pt too wide) detected at line 59
+Overfull \hbox (37.60352pt too wide) detected at line 64
 \OML/cmm/m/it/10 A \OT1/cmr/m/n/10 = [] \OMS/cmsy/m/n/10 ^^A [] ^^A []
  []
 
-
-Overfull \hbox (67.51117pt too wide) detected at line 70
+[2]
+Overfull \hbox (67.51117pt too wide) detected at line 75
 \OML/cmm/m/it/10 f[]\OT1/cmr/m/n/10 (\OML/cmm/m/it/10 z\OT1/cmr/m/n/10 ) = []\OML/cmm/m/it/10 exp\OT1/cmr/m/n/10 (\OMS/cmsy/m/n/10 ^^@[] ^^@ []\OT1/cmr/m/n/10 ) = \OML/cmm/m/it/10 K
  []
 
 
-Overfull \hbox (34.95003pt too wide) detected at line 72
+Overfull \hbox (34.95003pt too wide) detected at line 77
 \OMS/cmsy/m/n/10 , [] \OT1/cmr/m/n/10 + [] = \OMS/cmsy/m/n/10 ^^@ []\OT1/cmr/m/n/10 (\OML/cmm/m/it/10 K\OT1/cmr/m/n/10 2\OML/cmm/m/it/10 ^^Y[]\OT1/cmr/m/n/10 )
  []
 
-[2]
-Package marginnote Info: Margin note 3.1 is on absolute page 3 on input line 78.
-Package marginnote Info: right page because not two side mode on input line 78.
-Package marginnote Info: xpos seems to be 134.26999pt on input line 78.
+Package marginnote Info: Margin note 3.1 is on absolute page 3 on input line 83.
+Package marginnote Info: right page because not two side mode on input line 83.
+Package marginnote Info: xpos seems to be 134.26999pt on input line 83.
 
-Overfull \hbox (57.15239pt too wide) detected at line 82
+Overfull \hbox (57.15239pt too wide) detected at line 87
 \OMS/cmsy/m/n/10 , [] [][] []\OML/cmm/m/it/10 exp\OT1/cmr/m/n/10 (\OMS/cmsy/m/n/10 ^^@[] ^^@ []\OT1/cmr/m/n/10 )\OML/cmm/m/it/10 dxdy
  []
 
 [3] [4]
-Package marginnote Info: Margin note 5.1 is on absolute page 5 on input line 133.
-Package marginnote Info: right page because not two side mode on input line 133.
-Package marginnote Info: xpos seems to be 134.26999pt on input line 133.
+Package marginnote Info: Margin note 5.1 is on absolute page 5 on input line 139.
+Package marginnote Info: right page because not two side mode on input line 139.
+Package marginnote Info: xpos seems to be 134.26999pt on input line 139.
 
-Overfull \hbox (72.396pt too wide) detected at line 143
+Overfull \hbox (72.396pt too wide) detected at line 149
 \OT1/cmr/m/n/10 ^^F = [] = [] [](\OML/cmm/m/it/10 z[] \OMS/cmsy/m/n/10 ^^@ \OML/cmm/m/it/10 ^^V\OT1/cmr/m/n/10 )(\OML/cmm/m/it/10 z[] \OMS/cmsy/m/n/10 ^^@ \OML/cmm/m/it/10 ^^V\OT1/cmr/m/n/10 )[]
  []
 
 
-Overfull \hbox (13.111pt too wide) detected at line 152
+Overfull \hbox (13.111pt too wide) detected at line 158
 \OT1/cmr/m/n/10 = []([] []) \OMS/cmsy/m/n/10 ^^@ [] [] \OML/cmm/m/it/10 z[]\OT1/cmr/m/n/10 ^^F[]\OML/cmm/m/it/10 z[] \OT1/cmr/m/n/10 + [] [] \OML/cmm/m/it/10 z[]\OT1/cmr/m/n/10 ^^F[]\OML/cmm/m/it/10 ^^V \OT1/cmr/m/n/10 + [] [] \OML/cmm/m/it/10 ^^V[]\OT1/cmr/m/n/10 ^^F[]\OML/cmm/m/it/10 z[] \OMS/cmsy/m/n/10 ^^@ [] [] \OML/cmm/m/it/10 ^^V[]\OT1/cmr/m/n/10 ^^F[]\OML/cmm/m/it/10 ^^V
  []
 
-[5
-
-]
-Underfull \hbox (badness 10000) in paragraph at lines 176--176
+[5]
+Underfull \hbox (badness 10000) in paragraph at lines 182--182
 [][]\OT1/cmr/m/n/8 https://www.quora.com/What-is-the-differentiation-of-the-determinant-of-a-matrix-to-
  []
 
-
-Overfull \hbox (34.28767pt too wide) detected at line 183
+[6]
+Overfull \hbox (34.28767pt too wide) detected at line 189
 [] \OT1/cmr/m/n/10 = []([] \OMS/cmsy/m/n/10 ^^A \OT1/cmr/m/n/10 (\OMS/cmsy/m/n/10 ^^@[]\OT1/cmr/m/n/10 ) \OMS/cmsy/m/n/10 ^^A []\OT1/cmr/m/n/10 (^^F)(^^F[])[]) \OMS/cmsy/m/n/10 ^^@ [] []\OT1/cmr/m/n/10 (\OML/cmm/m/it/10 z[] \OMS/cmsy/m/n/10 ^^@ \OML/cmm/m/it/10 ^^V\OT1/cmr/m/n/10 )(\OML/cmm/m/it/10 z[] \OMS/cmsy/m/n/10 ^^@ \OML/cmm/m/it/10 ^^V\OT1/cmr/m/n/10 )[] = 0
  []
 
-[6] [7] (rapport.aux) ) 
+Package marginnote Info: Margin note 7.1 is on absolute page 7 on input line 200.
+Package marginnote Info: right page because not two side mode on input line 200.
+Package marginnote Info: xpos seems to be 134.26999pt on input line 200.
+<Figure_1.png, id=37, 462.528pt x 346.896pt>
+File: Figure_1.png Graphic file (type png)
+<use Figure_1.png>
+Package pdftex.def Info: Figure_1.png  used on input line 210.
+(pdftex.def)             Requested size: 345.0pt x 258.76335pt.
+
+Overfull \hbox (15.0pt too wide) in paragraph at lines 210--211
+[][] 
+ []
+
+[7]
+Package marginnote Info: Margin note 8.1 is on absolute page 8 on input line 214.
+Package marginnote Info: right page because not two side mode on input line 214.
+Package marginnote Info: xpos seems to be 134.26999pt on input line 214.
+<Figure_2.png, id=43, 722.7pt x 435.7881pt>
+File: Figure_2.png Graphic file (type png)
+<use Figure_2.png>
+Package pdftex.def Info: Figure_2.png  used on input line 223.
+(pdftex.def)             Requested size: 345.0pt x 208.03217pt.
+
+Overfull \hbox (15.0pt too wide) in paragraph at lines 223--225
+[][]
+ []
+
+[8 <./Figure_1.png>] [9 <./Figure_2.png>] (rapport.aux) ) 
 Here is how much of TeX's memory you used:
- 2667 strings out of 476411
- 40632 string characters out of 5789134
- 1874845 words of memory out of 5000000
- 23015 multiletter control sequences out of 15000+600000
+ 2687 strings out of 476411
+ 41073 string characters out of 5789135
+ 1879845 words of memory out of 5000000
+ 23032 multiletter control sequences out of 15000+600000
  521083 words of font info for 66 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
- 57i,13n,62p,536b,220s stack positions out of 10000i,1000n,20000p,200000b,200000s
-<C:/Users/Matth/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmbx12.pfb><C:/Users/Matth/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmex10.pfb><C:/Users/Matth/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cmextra/cmex7.pfb><C:/Users/Matth/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmmi10.pfb><C:/Users/Matth/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmmi5.pfb><C:/Users/Matth/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmmi7.pfb><C:/Users/Matth/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmr10.pfb><C:/Users/Matth/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmr12.pfb><C:/Users/Matth/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmr17.pfb><C:/Users/Matth/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmr5.pfb><C:/Users/Matth/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmr6.pfb><C:/Users/Matth/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmr7.pfb><C:/Users/Matth/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmr8.pfb><C:/Users/Matth/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmsy10.pfb><C:/Users/Matth/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmsy5.pfb><C:/Users/Matth/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmsy7.pfb><C:/Users/Matth/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/symbols/msbm10.pfb>
-Output written on rapport.pdf (7 pages, 215744 bytes).
+ 57i,13n,62p,548b,220s stack positions out of 10000i,1000n,20000p,200000b,200000s
+<C:/Users/nurha/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmbx12.pfb><C:/Users/nurha/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmex10.pfb><C:/Users/nurha/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cmextra/cmex7.pfb><C:/Users/nurha/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmmi10.pfb><C:/Users/nurha/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmmi5.pfb><C:/Users/nurha/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmmi7.pfb><C:/Users/nurha/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmr10.pfb><C:/Users/nurha/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmr12.pfb><C:/Users/nurha/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmr17.pfb><C:/Users/nurha/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmr5.pfb><C:/Users/nurha/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmr6.pfb><C:/Users/nurha/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmr7.pfb><C:/Users/nurha/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmr8.pfb><C:/Users/nurha/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmsy10.pfb><C:/Users/nurha/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmsy5.pfb><C:/Users/nurha/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmsy7.pfb><C:/Users/nurha/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/symbols/msbm10.pfb>
+Output written on rapport.pdf (9 pages, 352229 bytes).
 PDF statistics:
- 111 PDF objects out of 1000 (max. 8388607)
+ 122 PDF objects out of 1000 (max. 8388607)
  0 named destinations out of 1000 (max. 500000)
- 1 words of extra memory for PDF output out of 10000 (max. 10000000)
+ 11 words of extra memory for PDF output out of 10000 (max. 10000000)
 

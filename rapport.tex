@@ -11,8 +11,13 @@
 
 \begin{document}
 
-
 \maketitle
+
+\section{Introduction}
+
+Dans ce projet nous allons étudier la loi normale bidimensionnelle et essayer de la représenter graphiquement.
+Nous allons essayer de trouver une équation d'ellipse d'isodensité de cette loi, et calculer la probabilité qu'un point tiré selon cette loi appartienne à cette ellipse, et proposer 
+un estimateur des valeurs de $\mu$ et $\Sigma$. Puis, nous essayerons de prouver ces estimateurs en faisant une étude numerique sur python.
 
 \section{Développements mathématiques}
 
@@ -99,7 +104,7 @@ En changeant $(x,y)$ à $(x_1,y_1)$, nous avons maintenant:
 
 $$\int\int_{S_k}^{} \frac{1}{2\pi\sqrt{ab}}exp(-x_1^2-y_1^2)\left| \begin{matrix}\frac{\partial x}{\partial x_1}
     &  \frac{\partial x}{\partial y_1}
-    \\\frac{\partial y}{\partial x_1}
+    &  \\\frac{\partial y}{\partial x_1}
     & \frac{\partial y}{\partial y_1}
 \end{matrix} \right|dx_1dy_1$$
 $$\Leftrightarrow \int\int_{S_k}^{} \frac{1}{2\pi\sqrt{ab}}exp(-x_1^2-y_1^2)\left| -\sqrt{4ab}cos^2\theta -\sqrt{4ab}sin^2\theta\right|dx_1dy_1$$
@@ -109,8 +114,8 @@ $$\Leftrightarrow \int\int_{S_k}^{} \frac{1}{\pi}exp(-x_1^2-y_1^2)dx_1dy_1$$
 Changement en base polaire: on utilise $x_1=rcos\varphi$ et $y_1=rsin\varphi$
 
 $$\int\int_{S_k}^{} \frac{1}{\pi}exp(-r^2)rdrd\varphi$$
-$$\Leftrightarrow \frac{1}{\pi}\int_{0}^{r}\int_{0}^{2\pi} re^{-r}d\varphi dr$$
-$$\Leftrightarrow \int_{0}^{r} 2re^{-r} dr$$
+$$\Leftrightarrow \frac{1}{\pi}\int_{0}^{r}\int_{0}^{2\pi} re^{-r^2}d\varphi dr$$
+$$\Leftrightarrow \int_{0}^{r} 2re^{-r^2} dr$$
 
 Or, ici il faut utiliser $r=$ l'équation de l'ellipse en base $(r,\varphi)$
 
@@ -121,15 +126,16 @@ $$\Leftrightarrow \frac{r^2}{\ln(\frac{1}{K2\pi\sqrt{ab}})}=1$$
 $$\Leftrightarrow r=\sqrt{\ln(\frac{1}{K2\pi\sqrt{ab}})}$$
 
 Nous utilisons cette équation de $r$ comme borne superieure de notre intégrale:
-$$\int_{0}^{\sqrt{\ln(\frac{1}{K2\pi\sqrt{ab}})}} 2re^{-r} dr$$
-$$\Leftrightarrow \left[ -e^{r^2} \right]_{0}^{\sqrt{\ln(\frac{1}{K2\pi\sqrt{ab}})}}$$
-$$\Leftrightarrow -e^{\sqrt{\ln(\frac{1}{K2\pi\sqrt{ab}})}}+e^0$$
+$$\int_{0}^{\sqrt{\ln(\frac{1}{K2\pi\sqrt{ab}})}} 2re^{-r^2} dr$$
+$$\Leftrightarrow \left[ -e^{-r^2} \right]_{0}^{\sqrt{\ln(\frac{1}{K2\pi\sqrt{ab}})}}$$
+$$\Leftrightarrow -e^{-\ln(\frac{1}{K2\pi\sqrt{ab}})}+e^0$$
 
 Nous trouvons donc:
 
 $$p=P(Z \in S_k)$$
 $$\Leftrightarrow p=1-2\pi K\sqrt{ab}$$
-\clearpage
+$$$$
+%\clearpage
 \reversemarginpar\marginnote{2.}[0cm]
 Intuitivement, on a envie de montrer que les estimateurs de $\mu$ et $\Sigma$ sont :
 
@@ -173,7 +179,7 @@ $$= \sum_{i=1}^{N}\ln \frac{1}{2\pi\sqrt{|\Sigma|}} + \sum_{i=1}^{N}(-\frac{1}{2
 
 On dérive par rapport à $\Sigma$ et on cherche le maximum.
 
-On a aussi une autre formule de dérivation matricielle\footnote{https://www.quora.com/What-is-the-differentiation-of-the-determinant-of-a-matrix-to-the-matrix-itself-and-why} :
+On a aussi une autre formule de dérivation Matricielle\footnote{https://www.quora.com/What-is-the-differentiation-of-the-determinant-of-a-matrix-to-the-matrix-itself-and-why} :
 
 $$\frac{\partial \det\Sigma}{\partial \Sigma} = \det(\Sigma)(\Sigma^{-1})^{T}$$
 $$\frac{\partial a^{T}\Sigma^{T}b}{\partial \Sigma} = ab^{T}$$
@@ -188,6 +194,39 @@ $$\Leftrightarrow \frac{\partial \ln \mathcal{L}(\Sigma | z_i)}{\partial \Sigma}
 $$\Leftrightarrow \sum_{i=1}^{N}\Sigma=\sum_{i=1}^{N}(z_i-\mu)(z_i-\mu)^{T}$$
 $$\Leftrightarrow N\cdot\Sigma=\sum_{i=1}^{N}(z_i-\mu)(z_i-\mu)^{T}$$
 $$\Leftrightarrow \hat{\Sigma}=\frac{\sum_{i=1}^{N}(z_i-\mu)(z_i-\mu)^{T}}{N}$$
+
+\section{Étude numérique}
+
+\reversemarginpar\marginnote{1.}[0cm]
+On souhaite représenter un échantillon de points tirés selon la loi de $Z$ ainsi que les ellipses d'isodensité
+associées à des probabilités p $\in [0.3;0.5;0.9]$. 
+$$$$
+Nous avons choisi la valeur de $\mu$ au hasard avec $np.random$, et nous avons choisi la matrice de covariance:
+\[
+\Sigma = \begin{pmatrix} 3 &1.5  &\\ 1 &2 \end{pmatrix} 
+\]
+Nous avons tiré 1000 points selon la loi de $Z$, et voici le graphique obtenu avec les ellipses d'isodensité de probabilite $p$ :
+
+\includegraphics[width=\textwidth]{Figure_1.png}
+
+Nous constatons que 90\% des points sont dans l'ellipse la plus grande et 50\% des points sont dans la deuxième ellipse et 30\% des points sont dans l'ellipse la plus pettite.
+$$$$
+\reversemarginpar\marginnote{2.}[0cm]Pour calculer la valeur des estimateurs de $\mu$ et $\Sigma$ sur des échantillons de taille variable, on prends une taille d'échantillon = 
+$[1000,700,350,100]$ et nous calculons $\mu$ et $\Sigma$:
+
+$$\hat{\mu}_1= \frac{\sum_{i=1}^{N}x_i}{N}$$
+$$\hat{\mu}_2 = \frac{\sum_{i=1}^{N}y_i}{N}$$
+$$\hat{\Sigma}=\frac{\sum_{i=1}^{N}(z_i-\mu)(z_i-\mu)^{T}}{N} ; z_i = (x_i,y_i)$$
+
+Avec ces formules, nous calculons notre estimateur pour les differents tailles d'échantillon et nous tracons ces ellipses avec les probabilités $p$:
+
+\includegraphics[width=\textwidth]{Figure_2.png}
+En rouge: la vraie ellipse, En noir, bleu, vert, jaune: les ellipses formées avec les estimateurs.
+
+Nous constatons que plus la taille de l'échantillon est grande, plus c'est précis. Donc, les estimateurs $\hat{\mu}$ et $\hat{\Sigma}$ convergent vers $\mu$ et $\Sigma$, quand la taille de l'échantillon augmente.
+
+\section{Conclusion}
+Nous avons étudié la loi normale bidimensionnelle en détail et nous avons pu, en faisant les calculs et l'étude numerique, mieux comprendre cette loi et comment l'étudier.
 
 \end{document}
 
