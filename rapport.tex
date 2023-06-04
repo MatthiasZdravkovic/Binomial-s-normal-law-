@@ -99,7 +99,7 @@ En changeant $(x,y)$ à $(x_1,y_1)$, nous avons maintenant:
 
 $$\int\int_{S_k}^{} \frac{1}{2\pi\sqrt{ab}}exp(-x_1^2-y_1^2)\left| \begin{matrix}\frac{\partial x}{\partial x_1}
     &  \frac{\partial x}{\partial y_1}
-    &  \\\frac{\partial y}{\partial x_1}
+    \\\frac{\partial y}{\partial x_1}
     & \frac{\partial y}{\partial y_1}
 \end{matrix} \right|dx_1dy_1$$
 $$\Leftrightarrow \int\int_{S_k}^{} \frac{1}{2\pi\sqrt{ab}}exp(-x_1^2-y_1^2)\left| -\sqrt{4ab}cos^2\theta -\sqrt{4ab}sin^2\theta\right|dx_1dy_1$$
@@ -173,7 +173,7 @@ $$= \sum_{i=1}^{N}\ln \frac{1}{2\pi\sqrt{|\Sigma|}} + \sum_{i=1}^{N}(-\frac{1}{2
 
 On dérive par rapport à $\Sigma$ et on cherche le maximum.
 
-On a aussi une autre formule de dérivation Matricielle\footnote{https://www.quora.com/What-is-the-differentiation-of-the-determinant-of-a-matrix-to-the-matrix-itself-and-why} :
+On a aussi une autre formule de dérivation matricielle\footnote{https://www.quora.com/What-is-the-differentiation-of-the-determinant-of-a-matrix-to-the-matrix-itself-and-why} :
 
 $$\frac{\partial \det\Sigma}{\partial \Sigma} = \det(\Sigma)(\Sigma^{-1})^{T}$$
 $$\frac{\partial a^{T}\Sigma^{T}b}{\partial \Sigma} = ab^{T}$$
