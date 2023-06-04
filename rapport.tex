@@ -4,6 +4,7 @@
 \usepackage{marginnote}
 \usepackage{amssymb}
 
+
 \title{Projet Maths}
 \author{Matthias ZDRAVKOVIC, Ameen MOHD FAIRUZ}
 \date{Mai 2023}
@@ -161,8 +162,8 @@ $$\Leftrightarrow \sum_{i=1}^{N}\mu = \sum_{i=1}^{N}z_i^{T}\frac{(\sum_{i=1}^{N}
 $$\Leftrightarrow N\cdot\hat{\mu} = \sum_{i=1}^{N}z_i^{T}$$
 $$\Leftrightarrow \hat{\mu} = \frac{\sum_{i=1}^{N}z_i^{T}}{N}$$
 
-On trouve donc bien l'estimateur de $\mu$.
-
+Or $\frac{\sum_{i=1}^{N}z_i^{T}}{N} = \frac{\sum_{i=1}^{N}z_i}{N}$ car c'est une somme d'un vecteur colonne.
+On retrouve donc bien l'estimateur de $\mu$.
 On fait la même chose pour $\Sigma$ :
 
 $$\Sigma \rightarrow \ln \mathcal{L}(\Sigma | z_i)$$
@@ -178,7 +179,7 @@ $$\frac{\partial \det\Sigma}{\partial \Sigma} = \det(\Sigma)(\Sigma^{-1})^{T}$$
 $$\frac{\partial a^{T}\Sigma^{T}b}{\partial \Sigma} = ab^{T}$$
 avec a et b pas des fonctions de $\Sigma$.
 
-$$\frac{\partial \ln \mathcal{L}(\Sigma | z_i)}{\partial \Sigma}=\sum_{i=1}^{N}(2\pi\sqrt{\det\Sigma}\cdot\frac{\partial (\frac{1}{2\pi\sqrt{\det \Sigma}})}{\partial \Sigma})-\frac{1}{2}\sum_{i=1}^{N}(z_i-\mu)(z_i-\mu)^{T}=0$$
+$$\frac{\partial \ln \mathcal{L}(\Sigma | z_i)}{\partial \Sigma}=\sum_{i=1}^{N}(2\pi\sqrt{\det\Sigma}\cdot\frac{\partial }{\partial \Sigma}(\frac{1}{2\pi\sqrt{\det \Sigma}}))-\frac{1}{2}\sum_{i=1}^{N}(z_i-\mu)(z_i-\mu)^{T}=0$$
 $$\frac{\partial \ln \mathcal{L}(\Sigma | z_i)}{\partial \Sigma}=\sum_{i=1}^{N}(\sqrt{\det\Sigma}\cdot(-\frac{1}{2\det\Sigma \sqrt{\det \Sigma}})\cdot\det(\Sigma)(\Sigma^{-1})^{T})-\frac{1}{2}\sum_{i=1}^{N}(z_i-\mu)(z_i-\mu)^{T}=0$$
 $$\frac{\partial \ln \mathcal{L}(\Sigma | z_i)}{\partial \Sigma}=-\frac{1}{2}\sum_{i=1}^{N}\cdot(\Sigma^{-1})^{T}-\frac{1}{2}\sum_{i=1}^{N}(z_i-\mu)(z_i-\mu)^{T}=0$$
 
