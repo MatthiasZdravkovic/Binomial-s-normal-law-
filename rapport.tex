@@ -133,42 +133,42 @@ $$\Leftrightarrow p=1-2\pi K\sqrt{ab}$$
 Intuitivement, on a envie de montrer que les estimateurs de $\mu$ et $\Sigma$ sont :
 
 \[
-\mu = \begin{pmatrix} \frac{\sum_{1}^{N}Xi}{N} \\ \frac{\sum_{1}^{N}Yi}{N} \end{pmatrix} \Leftrightarrow \mu = \begin{pmatrix} \bar{X} \\ \bar{Y} \end{pmatrix} = \frac{\sum_{1}^{N}z_i}{N}
+\mu = \begin{pmatrix} \frac{\sum_{i=1}^{N}Xi}{N} \\ \frac{\sum_{i=1}^{N}Yi}{N} \end{pmatrix} \Leftrightarrow \mu = \begin{pmatrix} \bar{X} \\ \bar{Y} \end{pmatrix} = \frac{\sum_{i=1}^{N}z_i}{N}
 \]
 
 
 \[
-\Sigma = \begin{pmatrix}\frac{1}{N-1}\sum_{1}^{N}(x_i-\mu_1)^{2} & \frac{1}{N-1}\sum_{1}^{N}(x_i-\mu_1)(y_i-\mu_2) \\\frac{1}{N-1}\sum_{1}^{N}(x_i-\mu_1)(y_i-\mu_2) & \frac{1}{N-1}\sum_{1}^{N}(y_i-\mu_2)^{2}\end{pmatrix} = \frac{1}{N-1}\sum_{1}^{N}(z_i-\mu)(z_i-\mu)^{T}
+\Sigma = \begin{pmatrix}\frac{1}{N-1}\sum_{i=1}^{N}(x_i-\mu_1)^{2} & \frac{1}{N-1}\sum_{i=1}^{N}(x_i-\mu_1)(y_i-\mu_2) \\\frac{1}{N-1}\sum_{i=1}^{N}(x_i-\mu_1)(y_i-\mu_2) & \frac{1}{N-1}\sum_{i=1}^{N}(y_i-\mu_2)^{2}\end{pmatrix} = \frac{1}{N-1}\sum_{i=1}^{N}(z_i-\mu)(z_i-\mu)^{T}
 \]
 Montrons le grâce à la fonction log-vraisemblance. Pour commencer,
 on va trouver l'estimateur de $\mu$ en maximisant la fonction log-vraisemblance :
 
 $$\mu \rightarrow \ln \mathcal{L}(\mu | z_i)$$
-$$\Leftrightarrow \ln \mathcal{L}(\mu | z_i)=\ln \prod_{1}^{N} \frac{1}{2\pi\sqrt{|\Sigma|}}exp(-\frac{1}{2}(z_i-\mu)^{T}\Sigma^{-1}(z_i-\mu))$$
-$$= \sum_{1}^{N} (\ln \frac{1}{2\pi\sqrt{|\Sigma|}}exp(-\frac{1}{2}(z_i-\mu)^{T}\Sigma^{-1}(z_i-\mu)))$$
-$$= \sum_{1}^{N} (\ln \frac{1}{2\pi\sqrt{|\Sigma|}} -\frac{1}{2}(z_i-\mu)^{T}\Sigma^{-1}(z_i-\mu))$$
-$$= \sum_{1}^{N} (\ln \frac{1}{2\pi\sqrt{|\Sigma|}} -\frac{1}{2}(z_i^{T}\Sigma^{-1}z_i - z_i^{T}\Sigma^{-1}\mu - \mu^{T}\Sigma^{-1}z_i + \mu^{T}\Sigma^{-1}\mu))$$
-$$= \sum_{1}^{N} (\ln \frac{1}{2\pi\sqrt{|\Sigma|}} -\frac{1}{2}z_i^{T}\Sigma^{-1}z_i + \frac{1}{2}z_i^{T}\Sigma^{-1}\mu + \frac{1}{2}\mu^{T}\Sigma^{-1}z_i - \frac{1}{2}\mu^{T}\Sigma^{-1}\mu)$$
+$$\Leftrightarrow \ln \mathcal{L}(\mu | z_i)=\ln \prod_{i=1}^{N} \frac{1}{2\pi\sqrt{|\Sigma|}}exp(-\frac{1}{2}(z_i-\mu)^{T}\Sigma^{-1}(z_i-\mu))$$
+$$= \sum_{i=1}^{N} (\ln (\frac{1}{2\pi\sqrt{|\Sigma|}}exp(-\frac{1}{2}(z_i-\mu)^{T}\Sigma^{-1}(z_i-\mu))))$$
+$$= \sum_{i=1}^{N} (\ln \frac{1}{2\pi\sqrt{|\Sigma|}}) -\frac{1}{2}\sum_{i=1}^{N}((z_i-\mu)^{T}\Sigma^{-1}(z_i-\mu))$$
+$$= \sum_{i=1}^{N} (\ln \frac{1}{2\pi\sqrt{|\Sigma|}}) -\frac{1}{2}\sum_{i=1}^{N}(z_i^{T}\Sigma^{-1}z_i - z_i^{T}\Sigma^{-1}\mu - \mu^{T}\Sigma^{-1}z_i + \mu^{T}\Sigma^{-1}\mu)$$
+$$= \sum_{i=1}^{N} (\ln \frac{1}{2\pi\sqrt{|\Sigma|}}) -\frac{1}{2}\sum_{i=1}^{N}z_i^{T}\Sigma^{-1}z_i + \frac{1}{2}\sum_{i=1}^{N}z_i^{T}\Sigma^{-1}\mu + \frac{1}{2}\sum_{i=1}^{N}\mu^{T}\Sigma^{-1}z_i - \frac{1}{2}\sum_{i=1}^{N}\mu^{T}\Sigma^{-1}\mu$$
 On dérive par rapport à $\mu$ et on cherche le maximum. En sachant que pour n'importe quel vecteur v de taille 2 et matrice M de taille 2x2, on a\footnote{https://www.di.ens.fr/~fbach/courses/fall2009/formulaire.pdf}\footnote{https://en.wikipedia.org/wiki/Matrixcalculus} : 
 $$\frac{\partial (v^{T}Mv)}{\partial v} = (M+M^{T})v$$
 $$\frac{\partial v^{T}M}{\partial v} = M^{T}$$
 On utilise ces formules pour la dérivation matricielle :
 
-$$\frac{\partial \ln \mathcal{L}(\mu | z_i)}{\partial \mu} = \frac{1}{2}(\sum_{1}^{N}z_i^{T}\Sigma^{-1}+\sum_{1}^{N}(\Sigma^{-1}z_i)^{T}-\sum_{1}^{N}(\Sigma^{-1}+(\Sigma^{-1})^{T})\cdot\mu) = 0$$
-$$\Leftrightarrow \sum_{1}^{N}(\Sigma^{-1}+(\Sigma^{-1})^{T})\cdot\mu = \sum_{1}^{N}z_i^{T}\Sigma^{-1}+\sum_{1}^{N}(z_i^{T}(\Sigma^{-1})^{T})$$
-$$\Leftrightarrow \sum_{1}^{N}\mu = \frac{\sum_{1}^{N}z_i^{T}\Sigma^{-1}+\sum_{1}^{N}(z_i^{T}(\Sigma^{-1})^{T})}{\sum_{1}^{N}(\Sigma^{-1}+(\Sigma^{-1})^{T})}$$
-$$\Leftrightarrow \sum_{1}^{N}\mu = \sum_{1}^{N}z_i^{T}\frac{(\sum_{1}^{N}\Sigma^{-1}+((\Sigma^{-1})^{T}))}{\sum_{1}^{N}(\Sigma^{-1}+(\Sigma^{-1})^{T})}$$
-$$\Leftrightarrow N\cdot\hat{\mu} = \sum_{1}^{N}z_i^{T}$$
-$$\Leftrightarrow \hat{\mu} = \frac{\sum_{1}^{N}z_i^{T}}{N}$$
+$$\frac{\partial \ln \mathcal{L}(\mu | z_i)}{\partial \mu} = \frac{1}{2}(\sum_{i=1}^{N}z_i^{T}\Sigma^{-1}+\sum_{i=1}^{N}(\Sigma^{-1}z_i)^{T}-\sum_{i=1}^{N}(\Sigma^{-1}+(\Sigma^{-1})^{T})\cdot\mu) = 0$$
+$$\Leftrightarrow \sum_{i=1}^{N}(\Sigma^{-1}+(\Sigma^{-1})^{T})\cdot\mu = \sum_{i=1}^{N}z_i^{T}\Sigma^{-1}+\sum_{i=1}^{N}(z_i^{T}(\Sigma^{-1})^{T})$$
+$$\Leftrightarrow \sum_{i=1}^{N}\mu = \frac{\sum_{i=1}^{N}z_i^{T}\Sigma^{-1}+\sum_{i=1}^{N}(z_i^{T}(\Sigma^{-1})^{T})}{\sum_{i=1}^{N}(\Sigma^{-1}+(\Sigma^{-1})^{T})}$$
+$$\Leftrightarrow \sum_{i=1}^{N}\mu = \sum_{i=1}^{N}z_i^{T}\frac{(\sum_{i=1}^{N}\Sigma^{-1}+((\Sigma^{-1})^{T}))}{\sum_{i=1}^{N}(\Sigma^{-1}+(\Sigma^{-1})^{T})}$$
+$$\Leftrightarrow N\cdot\hat{\mu} = \sum_{i=1}^{N}z_i^{T}$$
+$$\Leftrightarrow \hat{\mu} = \frac{\sum_{i=1}^{N}z_i^{T}}{N}$$
 
 On trouve donc bien l'estimateur de $\mu$.
 
 On fait la même chose pour $\Sigma$ :
 
 $$\Sigma \rightarrow \ln \mathcal{L}(\Sigma | z_i)$$
-$$\Leftrightarrow \ln \mathcal{L}(\Sigma | z_i)=\ln \prod_{1}^{N} \frac{1}{2\pi\sqrt{|\Sigma|}}exp(-\frac{1}{2}(z_i-\mu)^{T}\Sigma^{-1}(z_i-\mu))$$
-$$= \sum_{1}^{N} (\ln \frac{1}{2\pi\sqrt{|\Sigma|}}exp(-\frac{1}{2}(z_i-\mu)^{T}\Sigma^{-1}(z_i-\mu)))$$
-$$= \sum_{1}^{N}\ln \frac{1}{2\pi\sqrt{|\Sigma|}} + \sum_{1}^{N}(-\frac{1}{2}(z_i-\mu)^{T}\Sigma^{-1}(z_i-\mu))$$
+$$\Leftrightarrow \ln \mathcal{L}(\Sigma | z_i)=\ln \prod_{i=1}^{N} \frac{1}{2\pi\sqrt{|\Sigma|}}exp(-\frac{1}{2}(z_i-\mu)^{T}\Sigma^{-1}(z_i-\mu))$$
+$$= \sum_{i=1}^{N} (\ln \frac{1}{2\pi\sqrt{|\Sigma|}}exp(-\frac{1}{2}(z_i-\mu)^{T}\Sigma^{-1}(z_i-\mu)))$$
+$$= \sum_{i=1}^{N}\ln \frac{1}{2\pi\sqrt{|\Sigma|}} + \sum_{i=1}^{N}(-\frac{1}{2}(z_i-\mu)^{T}\Sigma^{-1}(z_i-\mu))$$
 
 On dérive par rapport à $\Sigma$ et on cherche le maximum.
 
@@ -178,15 +178,15 @@ $$\frac{\partial \det\Sigma}{\partial \Sigma} = \det(\Sigma)(\Sigma^{-1})^{T}$$
 $$\frac{\partial a^{T}\Sigma^{T}b}{\partial \Sigma} = ab^{T}$$
 avec a et b pas des fonctions de $\Sigma$.
 
-$$\frac{\partial \ln \mathcal{L}(\Sigma | z_i)}{\partial \Sigma}=\sum_{1}^{N}(2\pi\sqrt{\det\Sigma}\cdot\frac{\partial (\frac{1}{2\pi\sqrt{\det \Sigma}})}{\partial \Sigma})-\frac{1}{2}(z_i-\mu)(z_i-\mu)^{T}=0$$
-$$\frac{\partial \ln \mathcal{L}(\Sigma | z_i)}{\partial \Sigma}=\sum_{1}^{N}(\sqrt{\det\Sigma}\cdot(-\frac{1}{2\det\Sigma \sqrt{\det \Sigma}})\cdot\det(\Sigma)(\Sigma^{-1})^{T})-\frac{1}{2}(z_i-\mu)(z_i-\mu)^{T}=0$$
-$$\frac{\partial \ln \mathcal{L}(\Sigma | z_i)}{\partial \Sigma}=-\frac{1}{2}\sum_{1}^{N}\cdot(\Sigma^{-1})^{T}-\frac{1}{2}(z_i-\mu)(z_i-\mu)^{T}=0$$
+$$\frac{\partial \ln \mathcal{L}(\Sigma | z_i)}{\partial \Sigma}=\sum_{i=1}^{N}(2\pi\sqrt{\det\Sigma}\cdot\frac{\partial (\frac{1}{2\pi\sqrt{\det \Sigma}})}{\partial \Sigma})-\frac{1}{2}\sum_{i=1}^{N}(z_i-\mu)(z_i-\mu)^{T}=0$$
+$$\frac{\partial \ln \mathcal{L}(\Sigma | z_i)}{\partial \Sigma}=\sum_{i=1}^{N}(\sqrt{\det\Sigma}\cdot(-\frac{1}{2\det\Sigma \sqrt{\det \Sigma}})\cdot\det(\Sigma)(\Sigma^{-1})^{T})-\frac{1}{2}\sum_{i=1}^{N}(z_i-\mu)(z_i-\mu)^{T}=0$$
+$$\frac{\partial \ln \mathcal{L}(\Sigma | z_i)}{\partial \Sigma}=-\frac{1}{2}\sum_{i=1}^{N}\cdot(\Sigma^{-1})^{T}-\frac{1}{2}\sum_{i=1}^{N}(z_i-\mu)(z_i-\mu)^{T}=0$$
 
 Or on sait que $\Sigma$ est une matrice de rotation, donc $\Sigma^{T}=\Sigma^{-1}$.
-$$\Leftrightarrow \frac{\partial \ln \mathcal{L}(\Sigma | z_i)}{\partial \Sigma}=-\frac{1}{2}\sum_{1}^{N}\Sigma-\frac{1}{2}(z_i-\mu)(z_i-\mu)^{T}=0$$
-$$\Leftrightarrow \sum_{1}^{N}\Sigma=\sum_{1}^{N}(z_i-\mu)(z_i-\mu)^{T}$$
-$$\Leftrightarrow (N-1)\cdot\Sigma=\sum_{1}^{N}(z_i-\mu)(z_i-\mu)^{T}$$
-$$\Leftrightarrow \hat{\Sigma}=\frac{\sum_{1}^{N}(z_i-\mu)(z_i-\mu)^{T}}{N-1}$$
+$$\Leftrightarrow \frac{\partial \ln \mathcal{L}(\Sigma | z_i)}{\partial \Sigma}=-\frac{1}{2}\sum_{i=1}^{N}\Sigma-\frac{1}{2}\sum_{i=1}^{N}(z_i-\mu)(z_i-\mu)^{T}=0$$
+$$\Leftrightarrow \sum_{i=1}^{N}\Sigma=\sum_{i=1}^{N}(z_i-\mu)(z_i-\mu)^{T}$$
+$$\Leftrightarrow N\cdot\Sigma=\sum_{i=1}^{N}(z_i-\mu)(z_i-\mu)^{T}$$
+$$\Leftrightarrow \hat{\Sigma}=\frac{\sum_{i=1}^{N}(z_i-\mu)(z_i-\mu)^{T}}{N}$$
 
 \end{document}
 

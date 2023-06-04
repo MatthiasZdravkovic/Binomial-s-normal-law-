@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.141592653-2.6-1.40.25 (MiKTeX 23.5) (preloaded format=pdflatex 2023.5.30)  4 JUN 2023 03:23
+This is pdfTeX, Version 3.141592653-2.6-1.40.25 (MiKTeX 23.5) (preloaded format=pdflatex 2023.5.30)  4 JUN 2023 09:29
 entering extended mode
  restricted \write18 enabled.
  file:line:error style messages enabled.
@@ -208,8 +208,13 @@ Package marginnote Info: Margin note 5.1 is on absolute page 5 on input line 132
 Package marginnote Info: right page because not two side mode on input line 132.
 Package marginnote Info: xpos seems to be 134.26999pt on input line 132.
 
-Overfull \hbox (60.6568pt too wide) detected at line 142
+Overfull \hbox (72.396pt too wide) detected at line 142
 \OT1/cmr/m/n/10 ^^F = [] = [] [](\OML/cmm/m/it/10 z[] \OMS/cmsy/m/n/10 ^^@ \OML/cmm/m/it/10 ^^V\OT1/cmr/m/n/10 )(\OML/cmm/m/it/10 z[] \OMS/cmsy/m/n/10 ^^@ \OML/cmm/m/it/10 ^^V\OT1/cmr/m/n/10 )[]
+ []
+
+
+Overfull \hbox (13.111pt too wide) detected at line 151
+\OT1/cmr/m/n/10 = []([] []) \OMS/cmsy/m/n/10 ^^@ [] [] \OML/cmm/m/it/10 z[]\OT1/cmr/m/n/10 ^^F[]\OML/cmm/m/it/10 z[] \OT1/cmr/m/n/10 + [] [] \OML/cmm/m/it/10 z[]\OT1/cmr/m/n/10 ^^F[]\OML/cmm/m/it/10 ^^V \OT1/cmr/m/n/10 + [] [] \OML/cmm/m/it/10 ^^V[]\OT1/cmr/m/n/10 ^^F[]\OML/cmm/m/it/10 z[] \OMS/cmsy/m/n/10 ^^@ [] [] \OML/cmm/m/it/10 ^^V[]\OT1/cmr/m/n/10 ^^F[]\OML/cmm/m/it/10 ^^V
  []
 
 [5
@@ -220,8 +225,8 @@ Underfull \hbox (badness 10000) in paragraph at lines 175--175
  []
 
 
-Overfull \hbox (18.17657pt too wide) detected at line 182
-[] \OT1/cmr/m/n/10 = []([] \OMS/cmsy/m/n/10 ^^A \OT1/cmr/m/n/10 (\OMS/cmsy/m/n/10 ^^@[]\OT1/cmr/m/n/10 ) \OMS/cmsy/m/n/10 ^^A []\OT1/cmr/m/n/10 (^^F)(^^F[])[]) \OMS/cmsy/m/n/10 ^^@ []\OT1/cmr/m/n/10 (\OML/cmm/m/it/10 z[] \OMS/cmsy/m/n/10 ^^@ \OML/cmm/m/it/10 ^^V\OT1/cmr/m/n/10 )(\OML/cmm/m/it/10 z[] \OMS/cmsy/m/n/10 ^^@ \OML/cmm/m/it/10 ^^V\OT1/cmr/m/n/10 )[] = 0
+Overfull \hbox (34.28767pt too wide) detected at line 182
+[] \OT1/cmr/m/n/10 = []([] \OMS/cmsy/m/n/10 ^^A \OT1/cmr/m/n/10 (\OMS/cmsy/m/n/10 ^^@[]\OT1/cmr/m/n/10 ) \OMS/cmsy/m/n/10 ^^A []\OT1/cmr/m/n/10 (^^F)(^^F[])[]) \OMS/cmsy/m/n/10 ^^@ [] []\OT1/cmr/m/n/10 (\OML/cmm/m/it/10 z[] \OMS/cmsy/m/n/10 ^^@ \OML/cmm/m/it/10 ^^V\OT1/cmr/m/n/10 )(\OML/cmm/m/it/10 z[] \OMS/cmsy/m/n/10 ^^@ \OML/cmm/m/it/10 ^^V\OT1/cmr/m/n/10 )[] = 0
  []
 
 [6] [7] (rapport.aux) ) 
@@ -234,7 +239,7 @@ Here is how much of TeX's memory you used:
  1141 hyphenation exceptions out of 8191
  57i,13n,62p,536b,220s stack positions out of 10000i,1000n,20000p,200000b,200000s
 <C:/Users/Matth/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmbx12.pfb><C:/Users/Matth/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmex10.pfb><C:/Users/Matth/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cmextra/cmex7.pfb><C:/Users/Matth/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmmi10.pfb><C:/Users/Matth/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmmi5.pfb><C:/Users/Matth/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmmi7.pfb><C:/Users/Matth/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmr10.pfb><C:/Users/Matth/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmr12.pfb><C:/Users/Matth/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmr17.pfb><C:/Users/Matth/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmr5.pfb><C:/Users/Matth/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmr6.pfb><C:/Users/Matth/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmr7.pfb><C:/Users/Matth/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmr8.pfb><C:/Users/Matth/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmsy10.pfb><C:/Users/Matth/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmsy5.pfb><C:/Users/Matth/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmsy7.pfb><C:/Users/Matth/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/symbols/msbm10.pfb>
-Output written on rapport.pdf (7 pages, 215107 bytes).
+Output written on rapport.pdf (7 pages, 215682 bytes).
 PDF statistics:
  111 PDF objects out of 1000 (max. 8388607)
  0 named destinations out of 1000 (max. 500000)
