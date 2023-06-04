@@ -149,7 +149,7 @@ $$= \sum_{1}^{N} (\ln \frac{1}{2\pi\sqrt{|\Sigma|}}exp(-\frac{1}{2}(z_i-\mu)^{T}
 $$= \sum_{1}^{N} (\ln \frac{1}{2\pi\sqrt{|\Sigma|}} -\frac{1}{2}(z_i-\mu)^{T}\Sigma^{-1}(z_i-\mu))$$
 $$= \sum_{1}^{N} (\ln \frac{1}{2\pi\sqrt{|\Sigma|}} -\frac{1}{2}(z_i^{T}\Sigma^{-1}z_i - z_i^{T}\Sigma^{-1}\mu - \mu^{T}\Sigma^{-1}z_i + \mu^{T}\Sigma^{-1}\mu))$$
 $$= \sum_{1}^{N} (\ln \frac{1}{2\pi\sqrt{|\Sigma|}} -\frac{1}{2}z_i^{T}\Sigma^{-1}z_i + \frac{1}{2}z_i^{T}\Sigma^{-1}\mu + \frac{1}{2}\mu^{T}\Sigma^{-1}z_i - \frac{1}{2}\mu^{T}\Sigma^{-1}\mu)$$
-On dérive par rapport à $\mu$ et on cherche le maximum. En sachant que pour n'importe quel vecteur v de taille 2 et matrice M de taille 2x2, on a :
+On dérive par rapport à $\mu$ et on cherche le maximum. En sachant que pour n'importe quel vecteur v de taille 2 et matrice M de taille 2x2, on a\footnote{https://www.di.ens.fr/~fbach/courses/fall2009/formulaire.pdf}\footnote{https://en.wikipedia.org/wiki/Matrixcalculus} : 
 $$\frac{\partial (v^{T}Mv)}{\partial v} = (M+M^{T})v$$
 $$\frac{\partial v^{T}M}{\partial v} = M^{T}$$
 On utilise ces formules pour la dérivation matricielle :
@@ -172,13 +172,21 @@ $$= \sum_{1}^{N}\ln \frac{1}{2\pi\sqrt{|\Sigma|}} + \sum_{1}^{N}(-\frac{1}{2}(z_
 
 On dérive par rapport à $\Sigma$ et on cherche le maximum.
 
-$$\frac{\partial \ln \mathcal{L}(\Sigma | z_i)}{\partial \Sigma}=-\frac{1}{2}((\Sigma)^{-1}+\Sigma^{T})\cdot(z-\mu)=0$$
+On a aussi une autre formule de dérivation Matricielle\footnote{https://www.quora.com/What-is-the-differentiation-of-the-determinant-of-a-matrix-to-the-matrix-itself-and-why} :
+
+$$\frac{\partial \det\Sigma}{\partial \Sigma} = \det(\Sigma)(\Sigma^{-1})^{T}$$
+$$\frac{\partial a^{T}\Sigma^{T}b}{\partial \Sigma} = ab^{T}$$
+avec a et b pas des fonctions de $\Sigma$.
+
+$$\frac{\partial \ln \mathcal{L}(\Sigma | z_i)}{\partial \Sigma}=\sum_{1}^{N}(2\pi\sqrt{\det\Sigma}\cdot\frac{\partial (\frac{1}{2\pi\sqrt{\det \Sigma}})}{\partial \Sigma})-\frac{1}{2}(z_i-\mu)(z_i-\mu)^{T}=0$$
+$$\frac{\partial \ln \mathcal{L}(\Sigma | z_i)}{\partial \Sigma}=\sum_{1}^{N}(\sqrt{\det\Sigma}\cdot(-\frac{1}{2\det\Sigma \sqrt{\det \Sigma}})\cdot\det(\Sigma)(\Sigma^{-1})^{T})-\frac{1}{2}(z_i-\mu)(z_i-\mu)^{T}=0$$
+$$\frac{\partial \ln \mathcal{L}(\Sigma | z_i)}{\partial \Sigma}=-\frac{1}{2}\sum_{1}^{N}\cdot(\Sigma^{-1})^{T}-\frac{1}{2}(z_i-\mu)(z_i-\mu)^{T}=0$$
 
 Or on sait que $\Sigma$ est une matrice de rotation, donc $\Sigma^{T}=\Sigma^{-1}$.
-
-$$\frac{\partial \ln \mathcal{L}(\Sigma | z_i)}{\partial \Sigma}=\Sigma^{-1}\cdot(z-\mu)=0$$
-Bizarre nan ? J'ai du faire une erreur sur celui-ci
-
+$$\Leftrightarrow \frac{\partial \ln \mathcal{L}(\Sigma | z_i)}{\partial \Sigma}=-\frac{1}{2}\sum_{1}^{N}\Sigma-\frac{1}{2}(z_i-\mu)(z_i-\mu)^{T}=0$$
+$$\Leftrightarrow \sum_{1}^{N}\Sigma=\sum_{1}^{N}(z_i-\mu)(z_i-\mu)^{T}$$
+$$\Leftrightarrow (N-1)\cdot\Sigma=\sum_{1}^{N}(z_i-\mu)(z_i-\mu)^{T}$$
+$$\Leftrightarrow \hat{\Sigma}=\frac{\sum_{1}^{N}(z_i-\mu)(z_i-\mu)^{T}}{N-1}$$
 
 \end{document}
 

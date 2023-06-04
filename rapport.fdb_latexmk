@@ -1,5 +1,5 @@
 # Fdb version 4
-["pdflatex"] 1685837174 "c:/Users/Matth/Documents/IR 1A/ProjetMaths/Binomial-s-normal-law-/rapport.tex" "rapport.pdf" "rapport" 1685837175 0
+["pdflatex"] 1685841789 "c:/Users/Matth/Documents/IR 1A/ProjetMaths/Binomial-s-normal-law-/rapport.tex" "rapport.pdf" "rapport" 1685841789 0
   "C:/Users/Matth/AppData/Local/MiKTeX/fonts/map/pdftex/pdftex.map" 1685712147 80909 eab91d9745dd2edfd62a31d53cd5fe15 ""
   "C:/Users/Matth/AppData/Local/MiKTeX/miktex/data/le/pdftex/pdflatex.fmt" 1685444392 23185515 5aa98f742baaec594e4923bf339e5d61 ""
   "C:/Users/Matth/AppData/Local/Programs/MiKTeX/fonts/tfm/public/amsfonts/cmextra/cmex7.tfm" 1233955448 1004 54797486969f23fa377b128694d548df ""
@@ -13,7 +13,9 @@
   "C:/Users/Matth/AppData/Local/Programs/MiKTeX/fonts/tfm/public/cm/cmbx10.tfm" 1136768653 1328 c834bbb027764024c09d3d2bf908b5f0 ""
   "C:/Users/Matth/AppData/Local/Programs/MiKTeX/fonts/tfm/public/cm/cmbx12.tfm" 1136768653 1324 c910af8c371558dc20f2d7822f66fe64 ""
   "C:/Users/Matth/AppData/Local/Programs/MiKTeX/fonts/tfm/public/cm/cmbx5.tfm" 1136768653 1332 f817c21a1ba54560425663374f1b651a ""
+  "C:/Users/Matth/AppData/Local/Programs/MiKTeX/fonts/tfm/public/cm/cmbx6.tfm" 1136768653 1344 8a0be4fe4d376203000810ad4dc81558 ""
   "C:/Users/Matth/AppData/Local/Programs/MiKTeX/fonts/tfm/public/cm/cmbx7.tfm" 1136768653 1336 3125ccb448c1a09074e3aa4a9832f130 ""
+  "C:/Users/Matth/AppData/Local/Programs/MiKTeX/fonts/tfm/public/cm/cmbx8.tfm" 1136768653 1332 1fde11373e221473104d6cc5993f046e ""
   "C:/Users/Matth/AppData/Local/Programs/MiKTeX/fonts/tfm/public/cm/cmex10.tfm" 1136768653 992 662f679a0b3d2d53c1b94050fdaa3f50 ""
   "C:/Users/Matth/AppData/Local/Programs/MiKTeX/fonts/tfm/public/cm/cmmi12.tfm" 1136768653 1524 4414a8315f39513458b80dfc63bff03a ""
   "C:/Users/Matth/AppData/Local/Programs/MiKTeX/fonts/tfm/public/cm/cmmi6.tfm" 1136768653 1512 f21f83efb36853c0b70002322c1ab3ad ""
@@ -34,7 +36,9 @@
   "C:/Users/Matth/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmr12.pfb" 1247596667 32722 d7379af29a190c3f453aba36302ff5a9 ""
   "C:/Users/Matth/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmr17.pfb" 1247596666 32362 bc3f3eec7ab7d65fe700963d4017d32c ""
   "C:/Users/Matth/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmr5.pfb" 1247596667 31809 8670ca339bf94e56da1fc21c80635e2a ""
+  "C:/Users/Matth/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmr6.pfb" 1247596667 32734 69e00a6b65cedb993666e42eedb3d48f ""
   "C:/Users/Matth/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmr7.pfb" 1247596667 32762 7fee39e011c23b3589931effd97b9702 ""
+  "C:/Users/Matth/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmr8.pfb" 1247596667 32726 39f0f9e62e84beb801509898a605dbd5 ""
   "C:/Users/Matth/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmsy10.pfb" 1247596667 32569 5e5ddc8df908dea60932f3c484a54c0d ""
   "C:/Users/Matth/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmsy5.pfb" 1247596666 32915 7bf7720c61a5b3a7ff25b0964421c9b6 ""
   "C:/Users/Matth/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmsy7.pfb" 1247596666 32716 08e384dc442464e7285e891af9f45947 ""
@@ -62,9 +66,9 @@
   "C:/Users/Matth/AppData/Local/Programs/MiKTeX/tex/latex/graphics/trig.sty" 1665067579 4023 293ea1c16429fc0c4cf605f4da1791a9 ""
   "C:/Users/Matth/AppData/Local/Programs/MiKTeX/tex/latex/l3backend/l3backend-pdftex.def" 1681896761 29940 9473d58112bc8a88f5505b823a053dde ""
   "C:/Users/Matth/AppData/Local/Programs/MiKTeX/tex/latex/marginnote/marginnote.sty" 1533806454 14009 35dd526d8247b2f4ee465b7aa25e2d16 ""
-  "c:/Users/Matth/Documents/IR 1A/ProjetMaths/Binomial-s-normal-law-/rapport.tex" 1685837174 12651 481facf2284524898c85baff27fb7991 ""
-  "rapport.aux" 1685837175 273 ede290ab31a7f6228d35a9c146569b43 "pdflatex"
-  "rapport.tex" 1685837174 12651 481facf2284524898c85baff27fb7991 ""
+  "c:/Users/Matth/Documents/IR 1A/ProjetMaths/Binomial-s-normal-law-/rapport.tex" 1685841788 13839 46cd30fe30cd09e38517f4077fe0de40 ""
+  "rapport.aux" 1685841789 273 3a4b5ce10357a14108af036740c6dee0 "pdflatex"
+  "rapport.tex" 1685841788 13839 46cd30fe30cd09e38517f4077fe0de40 ""
   (generated)
   "rapport.aux"
   "rapport.log"
